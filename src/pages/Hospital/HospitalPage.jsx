@@ -5,7 +5,7 @@ import "./HospitalPage.css";
 import { SearchBar } from "../../components/SearchBar";
 import { ReusableHero } from "../../components/ReusableHero";
 import { Link } from "react-router-dom";
-// import image10 from "../../src/assets/images/hospital.webp";
+import image10 from "/src/assets/images/hospital.webp";
 
 const hospitals = [
   {
@@ -14,7 +14,7 @@ const hospitals = [
     location: "India, Chennai",
     rating: 4.96,
     reviews: 672,
-    image: "../../src/assets/images/hospital.webp" , // Replace with actual image path
+    image: image10 , // Replace with actual image path
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const hospitals = [
     location: "India, Mumbai",
     rating: 4.85,
     reviews: 512,
-    image: "../../src/assets/images/hospital.webp" ,
+    image: image10 ,
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const hospitals = [
     location: "India, Delhi",
     rating: 4.75,
     reviews: 430,
-    image: "../../src/assets/images/hospital.webp" ,
+    image: image10 ,
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const hospitals = [
     location: "India, Gurgaon",
     rating: 4.80,
     reviews: 390,
-    image: "../../src/assets/images/hospital.webp" ,
+    image: image10 ,
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const hospitals = [
     location: "India, Bangalore",
     rating: 4.70,
     reviews: 350,
-    image: "../../src/assets/images/hospital.webp",
+    image: image10 ,
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const hospitals = [
     location: "India, Bangalore",
     rating: 4.70,
     reviews: 350,
-    image: "../../src/assets/images/hospital.webp",
+    image: image10 ,
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ const hospitals = [
     location: "India, Bangalore",
     rating: 4.70,
     reviews: 350,
-    image: "../../src/assets/images/hospital.webp",
+    image: image10 ,
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ const hospitals = [
     location: "India, Bangalore",
     rating: 4.70,
     reviews: 350,
-    image: "../../src/assets/images/hospital.webp",
+    image: image10 ,
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ const hospitals = [
     location: "India, Bangalore",
     rating: 4.70,
     reviews: 350,
-    image: "../../src/assets/images/hospital.webp",
+    image: image10 ,
   },
   {
     id: 10,
@@ -86,7 +86,7 @@ const hospitals = [
     location: "India, Bangalore",
     rating: 4.70,
     reviews: 350,
-    image: "../../src/assets/images/hospital.webp",
+    image: image10 ,
   },  
   {
     id: 11,
@@ -94,7 +94,7 @@ const hospitals = [
     location: "India, Bangalore",
     rating: 4.70,
     reviews: 350,
-    image: "../../src/assets/images/hospital.webp",
+    image: image10 ,
   },  
   {
     id: 12,
@@ -102,7 +102,7 @@ const hospitals = [
     location: "India, Bangalore",
     rating: 4.70,
     reviews: 350,
-    image: "../../src/assets/images/hospital.webp",
+    image: image10 ,
   },  
 
 ];
