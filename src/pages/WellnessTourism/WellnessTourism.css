@@ -1,0 +1,535 @@
+/* ------ Upper Section ------*/
+.container {
+    margin: 0 auto;
+}
+.wellnessUpper {
+    position: relative;
+}
+
+.filterWrapper {
+    background-color: white;
+}
+ 
+.filterButton { 
+    background-color: #29569C;
+}
+
+.wellnessBg {
+    /* max-width: 1340px; */
+    padding: 20px 0px 40px;
+}
+
+.wellnessBg img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 18px;
+}
+
+.wellness {
+    padding: 0 64px 32px;
+}
+
+.wellnessUpperContent {
+    position: absolute;
+    bottom: 0;
+    transform: translate(0px, -50px);
+    width: 100%;
+}
+
+.breadcrumb nav ol li, 
+.ant-breadcrumb .ant-breadcrumb-separator, 
+.ant-breadcrumb li:last-child {
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--font-inter);
+}
+ li::marker,li.breadcrumb::marker, li.ant-breadcrumb-separator::marker {
+    color: transparent;
+}
+.wellnessTitle {
+    color: var(--white);
+    padding: 12px 0 25px;
+}
+
+.wellnessTitle h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.wellnessTitle p {
+    font-size: 18px;
+}
+
+/* ------ Lower Section ------ */
+
+.lowerSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding-bottom: 66px;
+}
+
+.lowerFilter {
+    max-width: 350px;
+    width: 100%;
+}
+
+.lowerCard {
+    max-width: 968px;
+    width: 100%;
+}
+
+.mapsContainer {
+    border: 0.78px solid #DCE3FE;
+    border-radius: 9.33px;
+    background-color: var(--white);
+    padding: 14.5px 19.5px;
+    margin-bottom: 19px;
+}
+
+.map {
+    border: 0.69px solid #DCE3FE;
+    border-radius: 8.3px;
+    width: 100%;
+}
+
+.custom-collapse-header {
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.price-range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.ant-collapse-ghost {
+    background-color: var(--white);
+    padding: 36px 29px 21px;
+    border: 1px solid #DCE3FE;
+    border-radius: 12px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #00000080;
+    font-weight: 800;
+}
+
+.resultContent {
+    border: 1px solid #DCE3FE;
+    background-color: var(--white);
+    border-radius: 16px;
+    margin: 10px;
+    padding: 22px;
+}
+
+.resultAlign {
+    display: flex;
+    gap: 54px;
+}
+
+.resultLeftContent {
+    padding: 10px 0;
+}
+
+.resultLeftContent h1 {
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 12px;
+}
+
+.reviews {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 12px;
+}
+
+.reviewsRate, .reviewsLocation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.star img {
+    width: 12px;
+    height: 12px;
+}
+
+.reviewsValue {
+    display: flex;
+    font-size: 14px;
+    color: #737373;
+    font-weight: 500;
+    align-items: center;
+}
+
+.reviewsRating {
+    font-weight: 700;
+    color: var(--black);
+}
+
+.reviewsLocation {
+    color: #737373;
+}
+
+.reviewsIcon {
+    height: 16px;
+    color: #D6D7D8;
+}
+
+.tourismImgContainer {
+    overflow: scroll;
+}
+
+.tourismImgList {
+    max-width: 123px;
+    height: 138px;
+    padding-bottom: 12px;
+    display: flex;
+    gap: 15px;
+}
+
+.tourismImgList img {
+    border-radius: 7.67px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.tourismDescMainPage {
+    font-family: var(--font-inter);
+    border-radius: 0px;
+}
+
+.tourismDescMainPage h3 {
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.tourismDescMainPage p {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.resultRightContent {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #F1F4FB;
+    position: relative;
+}
+
+.resultRightAlign {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.packageDetail {
+    padding: 31px 32px 0px;
+}
+
+.packageBtn {
+    padding: 0px 32px 11px;
+}
+
+.packagePrice {
+    padding-bottom: 24px;
+}
+
+.packagePrice h4 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.packagePrice span {
+    font-weight: 500;
+    color: #737373;
+    font-size: 16px;
+}
+
+.packageBtn {
+    text-align: center;
+}
+
+.packageBtn Button {
+    padding: 12px 38px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    color: var(--white);
+    font-family: var(--font-man);
+}
+
+.packageDuration {
+    padding-bottom: 8px;
+}
+
+.packageDuration, .packagePerson {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.packageDuration p, .packagePerson p {
+    color: #737373;
+    font-weight: 500;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.label p {
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(60%, 70%);
+}
+
+.ant-pagination {
+    justify-content: center;
+    padding: 37px 0 0;
+}
+
+.ant-pagination .ant-pagination-options {
+    display: none;
+}
+
+.labelImg {
+    --r: 0.8em;
+    width: 44px;
+    border-inline: 0.5em solid #0000;
+    padding: 2.5em 0.2em calc(var(--r) + .2em);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 0.5em) 100%, 50% calc(90% - var(--r)), 0.5em 100%, 0 100%);
+    background: border-box, #FFC700 padding-box;
+}
+
+.filterTag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+  
+.filterTag button {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    color: red;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+.sorting {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.applied-filters {
+    display: flex;
+    gap: 16px;
+}
+
+.filter-tag {
+    border: 1px solid #737373;
+    background-color: transparent;
+    padding: 6px 22px;
+    display: flex;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+.clear-filter-btn {
+    border: none;
+    background-color: transparent;
+    color: #737373;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.ant-pagination .ant-pagination-item-active, .ant-pagination .ant-pagination-item {
+    border: none;
+    background-color: transparent;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+    color: #1F1F1E !important;
+}
+
+.ant-pagination .ant-pagination-item a {
+    color: #1F1F1E80;
+}
+
+.ant-pagination .ant-pagination-prev .ant-pagination-item-link, .ant-pagination .ant-pagination-next .ant-pagination-item-link {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--white);
+}
+
+/* ------ Laptop View ------ */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .wellness {
+        padding: 0 30px;  
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .packageDetail {
+        padding: 0px 15px;
+    }
+
+    .packageBtn {
+        padding: 0px 15px 11px;
+    }
+
+    .label {
+        position: relative;
+        right: 0;
+    }
+
+    .resultAlign {
+        gap: 28px;
+    }
+
+    .lowerSection {
+        gap: 24px;
+    }
+
+    .resultRightContent {
+        position: unset;
+    }
+}
+
+/* ------ Tab View ------ */
+
+@media screen and (max-width: 1024px) {
+    .wellness {
+        padding: 10px 10px 0;
+    }
+
+    .wellnessTitle h1 {
+        font-size: 24px;
+    }
+
+    .wellnessTitle p {
+        font-size: 14px;
+    }
+
+    .wellnessTitle {
+        padding: 0 0 14px;
+    }
+
+    .lowerFilter {
+        max-width: 250px;
+    }
+
+    .resultContent {
+        padding: 14px;
+        margin: 0 0 10px;
+    }
+
+    .resultAlign {
+        flex-direction: column;
+    }
+
+    .resultRightContent {
+        max-width: unset;
+    }
+
+    .packageBtn {
+        padding: 11px;
+    }
+
+    .ant-collapse-ghost {
+        padding: 20px;
+    }
+}
+
+/* ------ Mobile View ------ */
+
+@media screen and (max-width: 768px) {
+    .wellnessUpper, .wellnessUpperContent {
+        position: unset;
+        transform: translate(0px, -10px);
+    }
+    
+    .breadcrumb nav ol li, .ant-breadcrumb .ant-breadcrumb-separator, .ant-breadcrumb li:last-child, .wellnessTitle {
+        color: var(--black);
+    }
+
+    .wellnessTitle p, .reviewsLocation p, .breadcrumb nav ol li, .ant-breadcrumb .ant-breadcrumb-separator, .ant-breadcrumb li:last-child, .packageDuration p, .packagePerson p {
+        font-size: 14px;
+    }
+
+    .lowerFilter {
+        max-width: unset;
+    }
+
+    .lowerSection {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .mapsContainer, .sorting {
+        display: none;
+    }
+
+    .results {
+        justify-content: flex-end;
+    }
+
+    .tourismDescMainPage {
+        padding-top: 10px;
+    }
+
+    .resultLeftContent h1, .wellnessTitle h1, .packagePrice h4 {
+        font-size: 18px;
+    }
+
+    .tourismDescMainPage h3 {
+        font-size: 16px;
+    }
+
+    .resultAlign {
+        gap: 14px;
+    }
+
+    .ant-pagination {
+        padding: 17px 0 0;
+    }
+
+    .wellnessBg {
+        padding: 18px 0;
+    }
+} 
+
+
+

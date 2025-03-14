@@ -1,0 +1,152 @@
+.filterWrapper {
+    border: 1px solid #E4E6E8;
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.filterSection {
+    margin: 29px;
+    border: 1px solid #E4E6E8;
+    border-radius: 16px;
+}
+
+.filters {
+    padding: 21px 83px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 179.1px;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.filterRow {
+    display: flex;
+}
+
+.filters p {
+    font-weight: 700;
+    color: #737373;
+    font-size: 14px;
+}
+
+.filterIcon {
+    padding: 8px 10px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.ant-select-single {
+    width: 100%;
+    height: 22px;
+}
+
+.Icon {
+    color: #D6D7D8;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+    font-weight: 700;
+}
+
+.verticalLine {
+    border-left: 1px solid #E4E6E8;
+    margin: 0 28px;
+}
+
+.filterButton {
+    font-weight: 700;
+    padding: 16px 33px;
+    background-color: #3D77F6;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.filterButton:hover {
+    border:1px solid #3D77F6;
+    background-color: var(--white);
+    color:#3D77F6;
+}
+.searchIcon {
+    font-size: 20px;
+}
+
+.filterBtn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: var(--white);
+    font-weight: 700;
+    font-family: var(--font-man);
+}
+
+.buttonFilter {
+    display: flex;
+    gap: 18px;
+}
+
+@media screen and (min-width: 765px) and (max-width: 1024px) {
+    .filters {
+        padding: 15px;
+    }
+
+    .filterSection {
+        margin: 15px;
+    }
+
+    .filterButton {
+        padding: 12px;
+    }
+
+    .buttonFilter {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .filterSection {
+        margin: 12px;
+    }
+
+    .buttonFilter {
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .filter {
+        width: 100%;
+    }
+    
+    .verticalLine {
+        display: none;
+    }
+
+    .filterRow {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .filterButton {
+        padding: 10px;
+    }
+}

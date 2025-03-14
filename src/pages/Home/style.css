@@ -1,0 +1,83 @@
+
+.home_ourService button svg{
+  vertical-align: middle;
+}
+
+.home_serviceCard{
+max-width: 320px;
+border-radius: 10px;
+}
+.home_serviceInner{
+padding:30px 20px;
+}
+.home_serviceCard button{
+background-color: white;
+border: none;
+float: right;
+color: #5057E5;
+font-size: 1rem;
+position: relative;
+background: #f9fafe;
+padding: 20px;
+border-radius: 20px 8px 8px 8px;
+place-items: center;
+width: 150px;
+height: 52px;
+}
+.home_serviceCard button:before{
+content: "";
+position: absolute;
+top: -40px;
+right: 0;
+height: 40px;
+width: 40px;
+background: transparent;
+border-bottom-right-radius: 50%;
+box-shadow: 0 20px 0px 0 #f9fafe;
+}
+.home_serviceCard button:after{
+content: "";
+position: absolute;
+bottom: 0px;
+left: -39px;
+height: 40px;
+width: 40px;
+background: transparent;
+border-bottom-left-radius: 50%;
+box-shadow: 0 20px 0px 0 #f9fafe;
+transform: rotate(-91deg);
+}
+.home_serviceCard button span{
+margin-left: 5px;
+}
+
+.home_serviceInner h2{
+font-size: 1.5rem;
+line-height: 33px;
+font-weight: 500;
+font-family: var(--font-figtree);
+margin:10px 0;
+}
+.home_serviceInner p{
+line-height: 28px;
+font-weight: 400;
+font-size: 1rem;
+font-family: var(--font-manrope);
+color: #666666;
+}
+
+@media (max-width:600px){
+  .home_serviceInner h2{
+    font-size: 1.3rem;
+    }
+    .home_serviceInner p{
+     
+      font-size: 0.95rem;
+      
+      }
+}.home_serviceOuter{
+  padding:40px 0;
+}
+.home_serviceInner div img{
+  width: 80px;
+}
