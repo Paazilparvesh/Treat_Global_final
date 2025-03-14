@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <>
-      <ReusableHero insert heroImage={video01}>
+      <ReusableHero insert heroVideo={video01}>
         <div className="text-center px-2 md:px-0 py-20 flex items-center justify-end flex-col gap-4 text-white">
           <h1 className="lg:text-5xl font-semibold text-2xl font-figtree md:text-3xl lg:leading-[66px]">
             Health Care made simple, <br className="hidden lg:block" />

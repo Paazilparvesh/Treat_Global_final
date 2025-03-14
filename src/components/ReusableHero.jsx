@@ -1,14 +1,30 @@
 export const ReusableHero = ({
   children,
   heroImage,
+  heroVideo,
   className = "",
   insert,
 }) => {
   return (
     <div
-      className={`relative  container mx-auto lg:mt-5 overflow-hidden lg:rounded-xl w-full   ${className}`}
+      className={`relative container mx-auto lg:mt-5 overflow-hidden lg:rounded-xl w-full ${className}`}
     >
-      {heroImage && (
+      {/* Background Video */}
+      {heroVideo && (
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={heroVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      )}
+
+      {/* Background Image (if no video is provided) */}
+      {!heroVideo && heroImage && (
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -17,6 +33,8 @@ export const ReusableHero = ({
           }}
         />
       )}
+
+      {/* Overlay */}
       {insert && (
         <div className="absolute inset-0 bg-black opacity-50 lg:rounded-xl" />
       )}
