@@ -55,16 +55,17 @@
 
 .hospital-info {
     position: absolute;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px 30px;
     width: 419px;
-    height: 180px;
+    height: 120px;
     background-color:white;
     border-radius: 30px;
     margin-top:-40px;
-    z-index: 99;
+    z-index: 1;
 }
 
 .hospital-name {
@@ -119,16 +120,48 @@
     .hospital-list {
         grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
     }
+    .hospital-info{
+        width: 215px;
+        height: 200px;
+    }
+    .hospital-rating{
+        left: -155px;
+        top: 60px;
+    }
+    .hospital-name{
+        font-size: 18px;
+    }
+    .hospital-location{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 768px) {
     .hospital-list {
         grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
     }
+    .hospital-info{
+        width: 215px;
+        height: 200px;
+    }
+    .hospital-rating{
+        left: -155px;
+        top: 60px;
+    }
 }
+
 
 @media (max-width: 480px) {
     .hospital-list {
         grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    }
+    
+    .hospital-info{
+        width: 215px;
+        height: 200px;
+    }
+    .hospital-rating{
+        left: -155px;
+        top: 60px;
     }
 }
