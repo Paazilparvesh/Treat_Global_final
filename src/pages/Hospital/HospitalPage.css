@@ -116,12 +116,12 @@
 }
 
 /* Responsive Grid */
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     .hospital-list {
-        grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+        grid-template-columns: repeat(4, 1fr); /* 3 cards per row */
     }
     .hospital-info{
-        width: 215px;
+        width: 303px;
         height: 200px;
     }
     .hospital-rating{
@@ -136,12 +136,12 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hospital-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        grid-template-columns: repeat(3, 1fr); /* 2 cards per row */
     }
     .hospital-info{
-        width: 215px;
+        width: 275px;
         height: 200px;
     }
     .hospital-rating{
@@ -151,13 +151,27 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .hospital-list {
+        grid-template-columns: repeat(2, 1fr); /* 1 card per row */
+    }
+    
+    .hospital-info{
+        width: 299px;
+        height: 200px;
+    }
+    .hospital-rating{
+        left: -155px;
+        top: 60px;
+    }
+}
+@media (max-width: 425px) {
     .hospital-list {
         grid-template-columns: repeat(1, 1fr); /* 1 card per row */
     }
     
     .hospital-info{
-        width: 215px;
+        width: 285px;
         height: 200px;
     }
     .hospital-rating{
@@ -165,3 +179,5 @@
         top: 60px;
     }
 }
+
+
