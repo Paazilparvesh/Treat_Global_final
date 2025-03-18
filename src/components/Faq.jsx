@@ -14,9 +14,9 @@ export default function FAQ({ faqs }) {
   const secondColumn = faqs.filter((_, i) => i % 2 !== 0);
 
   return (
-    <div className="container font-manrope py-12 mx-auto px-4 lg:px-0 space-y-10">
+    <div className=" font-manrope mx-15 lg:px-0 space-y-10 bg-[#f9fafe]">
       <h1 className={heading}>
-        Frequently Asked <span className="text-[#5057E5]">Questions</span>
+        Frequently Asked <span className="text-blue-600">Questions</span>
       </h1>
 
       <div className="flex flex-col md:flex-row gap-6">

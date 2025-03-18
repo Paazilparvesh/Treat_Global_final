@@ -18,6 +18,7 @@ import IndividualPage from "../pages/WellnessTourism/IndividualTourism/Individua
 const AppRoutes = () => {
   return (
     <Routes>
+
       <Route path={routesPath.HOME} element={<Home />} />
 
       <Route path={routesPath.TREATMENTS} element={<Treatment />} />
@@ -40,6 +41,7 @@ const AppRoutes = () => {
 
       <Route path={routesPath.blog} element={<Blog />} /> 
       <Route path={routesPath.blog_Id} element={<SingleBlog />} /> 
+      
     </Routes>
   );
 };

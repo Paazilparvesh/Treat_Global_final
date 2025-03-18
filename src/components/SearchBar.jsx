@@ -9,7 +9,7 @@ export const SearchBar = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   return (
-    <div className="bg-white shadow-md rounded-2xl mt-5  p-4 w-full max-w-6xl mx-auto">
+    <div className="bg-white shadow-md rounded-2xl mt-5  p-4 w-full max-w-8xl mx-auto">
       <div className="flex flex-col lg:flex-row items-center border  border-gray-300  rounded-lg p-4 text-left gap-4">
         <div className="w-full lg:w-[25%]">
           <span className="text-gray-500 font-manrope text-sm">Country</span>

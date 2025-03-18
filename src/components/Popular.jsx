@@ -4,12 +4,13 @@ import { heading } from "../assets/styles/Style";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { Button } from "./Button";
+import doctorsData from "../data/constants";
 
 function Popular() {
-  const doctors = Array.from({ length: 4 });
+  const doctors = doctorsData.slice(4,8); // get first 4 doctors from the array
   return (
     <>
-      <div className=" px-4 pb-20  container mx-auto ">
+      <div className=" px-4 pb-10 mx-10 ">
         <div className="flex flex-wrap items-center py-5 justify-between">
          <div>
          <h1 className={heading}>
@@ -38,14 +39,14 @@ function Popular() {
           </div>
          </div>
 
-          <p className="max-w-2xl text-center text-[#666666] font-manrope"> Access world-renowned medical experts specializing in various fields, offering advanced treatments, personalized care, and trusted second opinions for your health needs.</p>
+          <p className="max-w-2xl text-end text-[#666666] font-manrope"> Access world-renowned medical experts specializing in various fields, offering advanced treatments, personalized care, and trusted second opinions for your health needs.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-stretch gap-6 p-4">
-          {doctors.map((_, index) => (
-            <DoctorCard key={index} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-stretch gap-0 p-4">
+          {doctors.map((doctor) => (
+            <DoctorCard key={doctor.id} doctor={doctor} />
           ))}
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 }

@@ -7,8 +7,8 @@ import Form from "../components/Form";
 function MedicalOpinions() {
   return (
     <>
-      <ReusableHero heroImage={hero}>
-        <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
+      <ReusableHero heroImage={hero} >
+        <div className="flex justify-center text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
           <p className="font-manrope text-sm  md:text-lg flex  items-center gap-4">
             Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
             <span> Medical Opinions</span>

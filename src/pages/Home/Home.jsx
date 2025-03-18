@@ -3,7 +3,6 @@ import Services from "./Services";
 import About from "./About";
 import Form from "../../components/Form";
 import { ReusableHero } from "../../components/ReusableHero";
-// import hero_image from "../../assets/images/treatment.webp";
 import { SearchBar } from "../../components/SearchBar";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
@@ -12,8 +11,6 @@ import { homeWhyChooseUS } from "../../data/constants";
 import SuccessStories from "../../components/SucessStories";
 import Popular from "../../components/Popular";
 import video01 from "../../assets/videos/homevideo1.mp4";
-// import IndividualHospital from "../Hospital/IndividualHospital/IndividualHospital";
-// import WellnessTourismPage from "../WellnessTourism/WellnessTourism";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -24,17 +21,17 @@ const Home = () => {
 
   return (
     <>
-      <ReusableHero insert heroVideo={video01}>
-        <div className="text-center px-2 md:px-0 py-20 flex items-center justify-end flex-col gap-4 text-white">
+      <ReusableHero insert heroVideo={video01} className="h-[700px] ">
+        <div className="text-center mt-28 px-2 md:px-0 py-20 flex items-center justify-center flex-col gap-4 text-white">
           <h1 className="lg:text-5xl font-semibold text-2xl font-figtree md:text-3xl lg:leading-[66px]">
-            Health Care made simple, <br className="hidden lg:block" />
-            Wellness journeys made easy
+            Health Care Made Simple, <br className="hidden lg:block" />
+            Wellness Journeys Made Easy
           </h1>
-          <p className="max-w-[600px] text-lg font-manrope font-medium">
+          <p className="max-w-[600px] text-lg font-manrope font-medium mb-0.5">
             Access expert care, top hospitals, online consultations, wellness
             tourism, and partner options for a seamless health journey.
           </p>
-          <div className="flex p-1 bg-white items-center w-full max-w-2xl mx-auto rounded-full overflow-hidden shadow-md border border-gray-300">
+          <div className="flex p-1 bg-white items-center w-full max-w-4xl mx-auto rounded-full overflow-hidden shadow-md border border-gray-300">
             <input
               type="text"
               value={query}
@@ -45,14 +42,17 @@ const Home = () => {
            <Button onClick={handleSearch} name="Search" startIcon={ <Icon icon="mdi:magnify" className="text-xl" />}/>
            
           </div>
+          <div className=" w-[1500px]">
           <SearchBar />
+          </div>
         </div>
       </ReusableHero>
       <Services />
       <About  />
       <Form title="Book An Appointment" subTitle={<>Why <span className="text-[#5057E5]">Choose Us</span> </>} data={homeWhyChooseUS}  />
-      <SuccessStories/>
       <Popular/>
+      <SuccessStories/>
+      
     </>
   );
 };

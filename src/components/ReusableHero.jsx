@@ -7,7 +7,7 @@ export const ReusableHero = ({
 }) => {
   return (
     <div
-      className={`relative container mx-auto lg:mt-5 overflow-hidden lg:rounded-xl w-full ${className}`}
+      className={`relative mb-20 mx-auto lg:mt-5 overflow-hidden lg:rounded-3xl w-[1800px] h-[500px] ${className}`}
     >
       {/* Background Video */}
       {heroVideo && (

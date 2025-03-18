@@ -1,5 +1,8 @@
+
 import doctor from "../assets/images/doctor.webp";
+import storyVideo from "/src/assets/videos/homevideo2.mp4"; // Example video
 import { heading } from "../assets/styles/Style";
+
 const SuccessStories = () => {
   const stories = [
     {
@@ -8,6 +11,7 @@ const SuccessStories = () => {
       description:
         "Lorem ipsum dolor amet, consectetur adipiscing elit. Tempor ligula neque morbi a netus condimentum. Litora porta non conubia turpis",
       image: doctor,
+      video: storyVideo, // Add video file
     },
     {
       name: "Rasel Biswas",
@@ -15,6 +19,7 @@ const SuccessStories = () => {
       description:
         "Lorem ipsum dolor amet, consectetur adipiscing elit. Tempor ligula neque morbi a netus condimentum. Litora porta non conubia turpis",
       image: doctor,
+      video: storyVideo,
     },
     {
       name: "Rasel Biswas",
@@ -22,40 +27,48 @@ const SuccessStories = () => {
       description:
         "Lorem ipsum dolor amet, consectetur adipiscing elit. Tempor ligula neque morbi a netus condimentum. Litora porta non conubia turpis",
       image: doctor,
+      video: storyVideo,
     },
   ];
 
   return (
-    <div className=" py-20">
-      <div className="container  mx-auto px-4">
+    <div className="py-20">
+      <div className="mx-10 px-4">
         <h1 className={heading}>
           Our Success <span className="text-secondary">Stories</span>
         </h1>
-        <div className="grid mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {/* Flex container for hover animation */}
+        <div className="flex mt-8 gap-6">
           {stories.map((story, index) => (
-            <div>
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden"
-              >
-                <div className="relative">
-                  <img
-                    src={story.image}
-                    alt={story.name}
-                    className="w-full rounded-xl h-[500px] object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0  bg-opacity-40 text-white p-4">
-                    <p className="font-manrope font-bold ">{story.description}</p>
-                  </div>
-                </div>
+            <div key={index} className="group flex-1 transition-all duration-500 hover:flex-[1.5]">
+              <div className="bg-white rounded-2xl overflow-hidden relative">
+                
+                {/* Image (default state) */}
+                <img
+                  src={story.image}
+                  alt={story.name}
+                  className="w-full rounded-xl h-[500px] object-cover transition-all duration-500 group-hover:opacity-0"
+                />
+
+                {/* Video (shown on hover) */}
+                <video
+                  src={story.video}
+                  autoPlay
+                  muted
+                  loop
+                  className="absolute inset-0 w-full h-full object-cover rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                ></video>
+
                 <div className="p-4 text-center">
-                <h3 className="text-lg font-figtree font-semibold">{story.name}</h3>
-                <p className="text-gray-500 font-manrope">{story.location}</p>
-              </div>
+                  <h3 className="text-lg font-figtree font-semibold">{story.name}</h3>
+                  <p className="text-gray-500 font-manrope">{story.location}</p>
+                </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );

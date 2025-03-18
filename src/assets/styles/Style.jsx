@@ -5,4 +5,4 @@ export const textarea =
 export const inputLabel = "md:text-lg text-[#1E1E1E]";
 export const inputContainer = "flex flex-col gap-2 font-figtree";
 export const heading =
-  "lg:text-4xl font-semibold font-figtree text-3xl  text-primary ";
+  "lg:text-5xl font-semibold font-figtree text-3xl  text-[#29569c] ";

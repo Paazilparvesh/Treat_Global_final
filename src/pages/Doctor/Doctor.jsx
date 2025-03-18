@@ -8,7 +8,7 @@ import { heading } from "../../assets/styles/Style";
 import DoctorCard from "../../components/DoctorCard";
 
 const Doctor = () => {
-  const doctors = Array.from({ length: 12 });
+  const doctors = Array.from({ length: 4 });
   const [treatment, setTreatment] = useState("");
   const [hospital, setHospital] = useState("");
   const [country, setCountry] = useState("");
@@ -27,7 +27,7 @@ const Doctor = () => {
       <ReusableHero heroImage={hero}>
         <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
           <p className="font-manrope text-sm  md:text-lg flex  items-center gap-4">
-            Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
+            {/* Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "} */}
             <span> Doctors</span>
           </p>
           <h1 className="lg:text-3xl font-semibold text-xl font-figtree md:text-2xl ">
@@ -155,8 +155,8 @@ const Doctor = () => {
 
       <div className=" px-4 pb-20  container mx-auto ">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-stretch gap-6 p-4">
-      {doctors.map((_, index) => (
-        <DoctorCard key={index} />
+      {doctors.map((_,index) => (
+        <DoctorCard key={index}/>
       ))}
     </div>
       </div>

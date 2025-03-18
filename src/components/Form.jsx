@@ -62,11 +62,11 @@ const Form = ({title,subTitle,data}) => {
   };
 
   return (
-    <section className="py-10  my-10 bg-[#ECF2FF] container mx-auto rounded-xl">
+    <section className="py-10  my-10 bg-[#ECF2FF] mx-auto w-[1800px] rounded-4xl">
       <div className="container mx-auto px-4 lg:px-10  flex flex-col items-center xl:flex-row gap-12">
         <div className="flex-1">
           <form
-            className="space-y-6 bg-white p-8 shadow-lg rounded-lg"
+            className="space-y-6 bg-white p-8 shadow-lg rounded-4xl"
             onSubmit={handleSubmit}
           >
             <h1 className=" font-semibold font-figtree text-2xl md:text-3xl  leading-[66px] text-[#5057E5]">
