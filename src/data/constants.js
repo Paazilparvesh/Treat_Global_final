@@ -440,6 +440,25 @@ The process of replacing the natural diseased and damaged heart valve with a pro
 };
 
 
+export const doctorsData = [
+  {
+    doctorImage: "src/assets/images/Doctors/Dr. Tapan.jpeg",
+    doctorName: "Dr. Tapan",
+    doctorField: "Associate Consultant - Gastrointestinal and HPB Oncology '&' Surgical Oncology",
+    doctorExperience: 3,
+    doctorHospital: "Apollo Hospital"
+  },
+  {
+    doctorImage: "../assets/images/doctor-2.webp",
+    doctorName: "Dr. John Doe",
+    doctorField: "Cardiologist",
+    doctorExperience: 10,
+    doctorHospital: "Max Hospital"
+  },
+  // Add more doctor data here
+];
+
+
 export const doctorData = [
   {
     name: "Dr. Hitesh Garg",
