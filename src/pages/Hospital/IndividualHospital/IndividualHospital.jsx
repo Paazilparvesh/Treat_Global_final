@@ -4,6 +4,7 @@ import Appoinment from "/src/components/Appoiment.jsx";
 import image from "/src/assets/images/mayoClinic.jpg"
 import FAQ from "/src/components/Faq";
 import { faqs } from "/src/data/constants";
+import Comp1 from "../../../components/ReusableBlog";
 
 const tabData = {
   About: {
@@ -195,7 +196,11 @@ export default function IndividualHospital() {
           <Appoinment/>
         </div>
       </div>
-      
+
+      <div>
+        <Comp1/>
+      </div>
+
       <div className="mt-20">
         <FAQ faqs={faqs} />
       </div>

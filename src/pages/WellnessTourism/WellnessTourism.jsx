@@ -117,34 +117,30 @@ const WellnessTourismPage = () => {
   const navigate = useNavigate();
 
   return (
+    <div>
 
-
-    <div className="container">
-      
-
-          <ReusableHero heroImage={image02}>
-            <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
-              <p className="font-manrope text-sm  md:text-lg flex  items-center gap-4">Home 
-              <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
-              <span> Hospitals</span>
-              </p>
-              <h1 className="lg:text-3xl font-semibold text-xl font-figtree md:text-2xl ">Find Your Hospitals
-              </h1>
-              <p className="max-w-[784px] text-lg font-manrope font-medium">Easily locate the best hospitals near you with our smart search and recommendations.
-              </p>
-      
-             
-            <FilterSearch
+      <ReusableHero heroImage={image02} className="h-[550px]">
+        <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
+          <div className="mx-8 font-manrope text-sm  md:text-lg flex  items-center gap-4">Home 
+            <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
+            <span> Hospitals</span>
+          </div>
+          <h1 className=" px-8 leading-14 lg:text-5xl font-semibold text-xl font-figtree md:text-2xl">Find Your Hospitals
+          </h1>
+          <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">Easily locate the best hospitals near you with our smart search and recommendations.
+          </p>
+    
+          <FilterSearch
               filters={{ location: locations, treatment: treatments }}
               onFilterChange={handleTempFilterChange}
               handleSearch={applyFilters}
-            />
+          />
       
-            </div>
-          </ReusableHero>
+        </div>
+      </ReusableHero>
 
       {/* Lower Section */}
-      <div className="lowerSection">
+      <div className="lowerSection w-full mx-15">
         <div className="lowerFilter">
           {/* Maps Container */}
           <div className="mapsContainer">
@@ -165,7 +161,7 @@ const WellnessTourismPage = () => {
           </div>
         </div>
 
-        <div className="lowerCard">
+        <div className=" mx-0 transform -translate-x-30">
           <div className="results">
             <div className="sorting">
               <p>Sort By:</p>
@@ -196,7 +192,7 @@ const WellnessTourismPage = () => {
           </div>
 
           {/* Result Container */}
-          <div className="resultContainer">
+          <div className="w-345 ">
             {paginatedResults.length > 0 ? (
               paginatedResults.map((training, index) => (
                 <div className="resultContent" key={index}>

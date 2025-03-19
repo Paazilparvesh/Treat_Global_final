@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import image02 from "/src/assets/images/medical.webp";
 import { trainingDetails } from "../../../data/mockData";
-// import images  from "/../src/assets";
 // import { IoLocationSharp } from "react-icons/io5";
 // import { CiShare1 } from "react-icons/ci";
 import "./IndividualWellnessTourism.css";
@@ -84,7 +83,7 @@ const IndividualPage = () => {
             <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
               <div className="modalImages">
                 {tourismDetail.images.map((image, index) => (
-                  <img key={index} src={image.src} alt={image.alt} />
+                  <img key={index} src={image} alt={image} />
                 ))}
               </div>
             </Modal>
