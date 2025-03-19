@@ -1,5 +1,5 @@
 import React from "react";
-import applo from "../../assets/images/appolo.webp";
+import apolo from "../../assets/images/appolo.webp";
 import { ReusableHero } from "../../components/ReusableHero";
 import { blogData, faqs } from "../../data/constants";
 import Appointment from "../../components/Appoiment";
@@ -7,26 +7,26 @@ import FAQ from "../../components/Faq";
 function SingleBlog() {
   return (
     <>
-      <ReusableHero heroImage={applo}>
-        <div className="flex justify-center   px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
-          <p className="font-manrope text-sm  md:text-lg flex  items-center gap-4">
+      <ReusableHero heroImage={apolo} className="h-[550px]">
+        <div className="flex justify-center text-center mt-20 md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
+          <div className="mx-8 font-manrope text-sm  md:text-lg flex  items-center gap-4">
             Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
             <span> Blogs</span>
-          </p>
-          <h1 className="lg:text-3xl max-w-2xl font-semibold text-xl font-figtree md:text-2xl ">
+          </div>
+          <h1 className=" px-8 leading-14 w-300 lg:text-5xl  font-semibold text-xl font-figtree md:text-2xl ">
             {blogData.title}
           </h1>
-          <p className="text-lg font-manrope ">
+          <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">
             {blogData.hospital} • {blogData.date}
           </p>
         </div>
       </ReusableHero>
 
-      <div className="container mx-auto flex flex-col md:flex-row gap-6 py-5 px-4">
-        <div className="flex-[7] lg:ps-7 bg-white py-8 space-y-5 shadow-lg  rounded-lg p-4">
+      <div className=" mx-10 bg-[#f9fafe] flex flex-col md:flex-row gap-6 py-5">
+        <div className="flex-[7] lg:ps-7 bg-white py-8 space-y-5 shadow-lg  rounded-lg px-4">
           <div className="">
             {blogData.sections.map((section, index) => (
-              <div key={index} className="mt-6">
+              <div key={index} className="mt-6 pl-4 pr-10">
                 <h3 className="text-lg font-semibold font-figtree">
                   {section.heading}
                 </h3>

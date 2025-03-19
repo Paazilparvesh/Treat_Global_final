@@ -67,7 +67,7 @@ function Appointment() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-4 space-y-4  bg-[#f1f4fb] shadow-lg rounded-b-lg "
+      className="p-4 space-y-4  bg-[#f1f4fb] shadow-2xl rounded-b-lg"
     >
       <InputField
         label="Name"

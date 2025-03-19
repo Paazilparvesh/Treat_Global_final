@@ -18,7 +18,7 @@ const Contact = () => {
             Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
             <span> Contact Us</span>
           </div>
-          <h1 className=" px-8 leading-14 lg:text-5xl font-semibold text-xl font-figtree md:text-2xl ">
+          <h1 className=" px-8 leading-14 lg:text-5xl font-semibold text-xl font-figtree md:text-2xl">
             Contact Us
           </h1>
           <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">

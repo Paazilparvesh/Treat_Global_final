@@ -14,7 +14,7 @@ const iconMap = {
 
 const Footer = () => {
   return (
-    <div className="container font-figtree mx-auto px-4">
+    <div className=" font-figtree mx-10 mb-20 px-4">
       <footer className="bg-[#E0F7FF] p-4  lg:p-10 rounded-[25px] text-primary flex flex-col flex-wrap lg:flex-nowrap   md:flex-row gap-14">
         <div className="bg-white rounded-lg shadow-md p-8 lg:max-w-96">
           <div className="">

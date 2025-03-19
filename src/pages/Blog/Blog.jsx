@@ -6,26 +6,26 @@ import BlogCard from "../../components/BlogCard";
 import hospital from "../../assets/images/hospital.webp";
 
 function Blog() {
-  const doctors = Array.from({ length: 12 });
+  const blogs = Array.from({ length: 12 });
   return (
     <>
-      <ReusableHero heroImage={hero}>
-        <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
-          <p className="font-manrope text-sm  md:text-lg flex  items-center gap-4">
+      <ReusableHero heroImage={hero} className="h-[550px]" >
+        <div className="flex justify-center text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
+          <div className="mx-8 font-manrope text-sm  md:text-lg flex  items-center gap-4">
             Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
             <span> Blog</span>
-          </p>
-          <h1 className="lg:text-3xl font-semibold text-xl font-figtree md:text-2xl ">
+          </div>
+          <h1 className=" px-8 leading-14 w-300 lg:text-5xl  font-semibold text-xl font-figtree md:text-2xl ">
             Our Blog
           </h1>
-          <p className="max-w-[784px] text-lg font-manrope font-medium">
+          <p className="max-w-[1250px] px-8 text-[22px] font-manrope font-light">
             Explore our latest blogs for insights, updates, and expert tips.
             Stay informed and make the most of our platform!
           </p>
         </div>
       </ReusableHero>
 
-      <div className="flex justify-between px-4 flex-wrap gap-4 container mx-auto py-10">
+      <div className="flex justify-between px-4 flex-wrap gap-4 mx-15 py-10">
         <h1 className={heading}>
           Related <span className="text-secondary">Blog</span>{" "}
         </h1>
@@ -33,9 +33,9 @@ function Blog() {
           Found 13 Results
         </span>
       </div>
-      <div className=" px-4 pb-20  container mx-auto ">
+      <div className=" px-4 pb-20 mx-10 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-stretch gap-6 p-4">
-          {doctors.map(() => (
+          {blogs.map(() => (
             <BlogCard
               imageUrl={hospital}
               date="13 March 2022"

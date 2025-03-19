@@ -1,12 +1,18 @@
 import { useState } from "react";
 import "./IndividualHospital.css";
-// import Appoinment from "./Appoinment";
+import Appoinment from "/src/components/Appoiment.jsx";
 import image from "/src/assets/images/mayoClinic.jpg"
+import FAQ from "/src/components/Faq";
+import { faqs } from "/src/data/constants";
+
 const tabData = {
   About: {
     Image: [{src: image, alt: "Main Hospital"}, {src: image, alt: "Side 1"}, {src: image, alt: "Side 2"}],
-    title: "Quironsalud Hospital Group, Spain",
-    address: "C/ Zurbarán 28, Madrid, Comunidad de, 28010, Spain",
+    title: "Quironsalud Hospital Group",
+    rating: "4.96",
+    reviews: "672",
+    location: "USA",
+
     sections: [
       {
         heading: "About",
@@ -99,23 +105,49 @@ export default function IndividualHospital() {
 
     <div className="tabs-gallery-container">
 
+      <div className="flex justify-between items-center">
+      {/* Left Section: Title & Details */}
+      <div className="w-full mx-10 mt-20">
+        <h1 className="text-5xl font-bold ">{tabData[activeTab].title}</h1>
+        <div className="flex items-center text-gray-600 mt-1">
+          <span className="ml-3 flex items-center">
+            <img src="/src/assets/svg/Vector.svg" alt="Location" className="w-4 h-4 mr-1" />
+          </span>
+          <span className=" text-lg font-semibold">{tabData[activeTab].rating}</span>
+          <span className="text-sm ml-1">({tabData[activeTab].reviews} reviews)</span>
+
+          <span className="ml-3 flex items-center">
+            <img src="\src\assets\svg\location.svg" alt="Location" className="w-4 h-4 mr-1" />
+          </span>
+          <span className=" text-lg font-semibold">{tabData[activeTab].location}</span>
+        </div>
+        
+      </div>
+
+      {/* Right Section: Share Button */}
+      <div className="text-black text-2xl mt-15 flex items-center cursor-pointer mr-15">
+        <img src="\src\assets\svg\share.svg" alt="Share" className="w-5 h-5 mr-1" />
+        <span>Share</span>
+      </div>
+      </div>
+
         {/* Gallery */}
       <div className="gallery">
-        <h1 className="hos-title">{tabData[activeTab].title}</h1>
-        <h2 className="hos-address">{tabData[activeTab].rating} <span><image src="" alt=""></image>{tabData[activeTab].country}</span></h2>
+        
         <div className="gallery-images">
             <div className="left-images">
                 <img className="main-image" src= {image} alt="Main Hospital" />
             </div>
-            <div className="overlay">View More</div>
+           
             <div className="side-images">
                 <div className="col1">
                     <img className="rounded-image" src={image} alt="Side 1" />
                     <img className="rounded-image" src={image} alt="Side 2" />
                 </div>
                 <div className="col2">
-                    <img className="rounded-image" src={image} alt="Side 1" />
-                    <img className="rounded-image" src={image} alt="Side 2" />
+                  <div className="overlayBox">View More</div>
+                  <img className="rounded-image" src={image} alt="Side 1" />
+                  <img className="rounded-image" src={image} alt="Side 2" />
                 </div>
                 
             </div>
@@ -160,26 +192,16 @@ export default function IndividualHospital() {
           ))}
         </div>
         <div className="right-content">
-        {/* <Appoinment /> */}
-          {/* <div className="appointment-box">
-            <h3>Request Appointment</h3>
-            <p>Please provide your information, and one of our professionals will contact you.</p>
-            <form>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="E - Mail" />
-              <input type="tel" placeholder="Number" />
-              <select>
-                <option>Country</option>
-              </select>
-              <input type="text" placeholder="City" />
-              <input type="file" />
-              <textarea placeholder="Describe Your Medical Issues"></textarea>
-              <button>Book an appointment</button>
-              <button>Chat Support</button>
-            </form>
-          </div> */}
+          <Appoinment/>
         </div>
       </div>
+      
+      <div className="mt-20">
+        <FAQ faqs={faqs} />
+      </div>
+
     </div>
   );
 }
+
+
