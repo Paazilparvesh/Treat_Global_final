@@ -16,81 +16,84 @@ const tabData = {
 
     sections: [
       {
-        heading: "About",
+        // heading: "About",
         content: [
-            "About our Hospital :",
-            "Quironsalud is the largest private hospital group in Spain and Europe, with over 60 years of experience in healthcare.",
-            "We provide high-quality medical care to over 5 million patients annually, with a team of over 40,000 professionals across 58 hospitals and 524 operating theatres.",
-            "Our network of hospitals offers a wide range of medical services, including oncology, cardiology, neurology, and more.",
-            "We are committed to providing our patients with the best possible care, using the latest medical technology and treatments to ensure the best outcomes.",
-            "Our team of highly qualified medical professionals is dedicated to providing personalized care to each patient, with a focus on safety, quality, and patient satisfaction.",
-            "We are proud to be at the forefront of medical innovation, with a strong commitment to research and development to improve patient care and outcomes.",
-            "Our goal is to provide our patients with the best possible care, in a safe and comfortable environment, to help them achieve the best possible health outcomes."
+            "Our hospital offers comprehensive healthcare services, including 24/7 emergency care, advanced diagnostic imaging, state-of-the-art surgical facilities, specialized cancer treatment, and personalized rehabilitation programs. Our team of experienced medical professionals provides compassionate, patient-centered care, ensuring the highest standards of safety and comfort.We are committed to continuous improvement, utilizing the latest medical technologies to deliver exceptional healthcare outcomes. "
         ]
       },
-      {
-        heading: "Key Features",
-        content: [
-            "Women's Health Department",
-            "Cardiology",
-            "Heart Department",
-            "Cosmetic Surgery",
-            "General / Metabolic Surgery",
-            "Thoracic Surgery",
-            "Neuroscience Department",
-            "Ophthalrnology",
-            "Oncology Department",
-            "Childrens Health Department",
-            "Assisted Reproduction",
-            "Locomotive System Department",
-            "Urology",
-            "Genetics",
-            "Angiology and Vascular Surgery",
-            "Dermatology",
-            "Oral and Maxillofacial Surgery",
-            "Pneumology"
-        ]
-      }
+      // {
+      //   heading: "Key Features",
+      //   content: [
+      //       "Women's Health Department",
+      //       "Cardiology",
+      //       "Heart Department",
+      //       "Cosmetic Surgery",
+      //       "General / Metabolic Surgery",
+      //       "Thoracic Surgery",
+      //       "Neuroscience Department",
+      //       "Ophthalrnology",
+      //       "Oncology Department",
+      //       "Childrens Health Department",
+      //       "Assisted Reproduction",
+      //       "Locomotive System Department",
+      //       "Urology",
+      //       "Genetics",
+      //       "Angiology and Vascular Surgery",
+      //       "Dermatology",
+      //       "Oral and Maxillofacial Surgery",
+      //       "Pneumology"
+      //   ]
+      // }
     ]
   },
   Specialization: {
     title: "Team & Specialisation",
     sections: [
       {
-        heading: "Departments",
+        // heading: "Departments",
         content: [
-          "Women’s Health Department",
-          "Cardiology",
-          "Heart Department",
-          "Cosmetic Surgery",
-          "General / Metabolic Surgery",
-          "Thoracic Surgery",
-          "Neuroscience Department"
+          "Our hospital's multidisciplinary team comprises experienced physicians, the best nurses, and allied health professionals who collaborate to deliver comprehensive patient care. The topmost Specializations include cardiology, neurology, oncology, orthopedics, and pediatrics, ensuring tailored treatments for diverse medical needs. This collaborative approach enhances patient outcomes and safety. "
         ]
       },
-      {
-        heading: "Expertise",
-        content: [
-          "Highly qualified medical professionals",
-          "Comprehensive treatment across various specialities",
-          "State-of-the-art medical technology"
-        ]
-      }
+      // {
+      //   heading: "Expertise",
+      //   content: [
+      //     "Highly qualified medical professionals",
+      //     "Comprehensive treatment across various specialities",
+      //     "State-of-the-art medical technology"
+      //   ]
+      // }
     ]
   },
   Infrastructure: {
     title: "Infrastructure",
     sections: [
       {
-        heading: "Facilities",
-        content: "Multilingual Staff and International Patient Support: The hospital boasts a diverse team fluent in multiple languages ensuring effective communication... Equipped with advanced medical infrastructure, the hospital features a 3-Tesla MRI scanner, Cyber-Knife VSI, da Vinci Surgical System, PET-CT scanner, and more."
+        // heading: "Facilities",
+        content: ["Our hospital's infrastructure is meticulously designed to provide top-tier healthcare services, ensuring patient safety, comfort, and optimal medical outcomes.",
+                  "A hospital's infrastructure includes:",
+
+                  "Medical Facilities:",
+                  "Hospitals, clinics, and specialized centers are equipped to provide patient care at Treat global in India.",
+
+                  "Healthcare Workforce:",
+                  "Best Doctors, nurses, and support staff who deliver medical services.",
+
+                  "Technology Systems:",
+                  "Top Electronic health records and telemedicine platforms that manage patient information and facilitate remote consultations."
+                 ]
       },
       {
-        heading: "Key Highlights",
+        heading: "A hospital's infrastructure includes:",
         content: [
-          "Advanced diagnostic and treatment facilities",
-          "World-class surgical equipment",
-          "Comfortable and patient-friendly environment"
+          "Medical Facilities:",
+          "Hospitals, clinics, and specialized centers are equipped to provide patient care at Treat global in India.",
+
+          "Healthcare Workforce:",
+          "Best Doctors, nurses, and support staff who deliver medical services.",
+
+          "Technology Systems:",
+          "Top Electronic health records and telemedicine platforms that manage patient information and facilitate remote consultations."
         ]
       }
     ]
@@ -186,7 +189,7 @@ export default function IndividualHospital() {
                   ))}
                 </ul>
               ) : (
-                <p className="dynamic-para">{section.content}</p>
+                <p className="dynamic-para ">{section.content}</p>
               )}
               {index !== tabData[activeTab].sections.length - 1 && <hr />}
             </div>

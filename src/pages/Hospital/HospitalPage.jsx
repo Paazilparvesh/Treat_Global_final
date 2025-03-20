@@ -1,7 +1,8 @@
 
 import React from "react";
+import { useState } from "react";
 import hero_image from "../../assets/images/treatment.webp";
-// import { SearchBar } from "../../components/SearchBar";
+import { SearchBar } from "../../components/SearchBar";
 import { ReusableHero }from "/src/components/ReusableHero.jsx";
 import HospitalCard from "../../components/HospitalCard";
 import image10 from "/src/assets/images/hospital.webp";
@@ -107,9 +108,18 @@ const hospitalData = [
 
 const HospitalList = () => {
 
-  // const [selectedCountry, setSelectedCountry] = useState("");  
-  // const [selectedTreatment, setSelectedTreatment] = useState("");  
-  // const [filteredHospitals, setFilteredHospitals] = useState(hospitals);
+  const [selectedCountry, setSelectedCountry] = useState("");  
+  const [selectedTreatment, setSelectedTreatment] = useState("");  
+  const [filteredHospitals, setFilteredHospitals] = useState(hospitalData);
+
+  const handleSearch = () => {
+    const filtered = hospitalData.filter(
+      (hospital) =>
+        (!selectedCountry || hospital.location.includes(selectedCountry)) &&
+        (!selectedTreatment || hospital.treatment === selectedTreatment)
+    );
+    setFilteredHospitals(filtered);
+  };
 
   return (
     <>
@@ -126,7 +136,11 @@ const HospitalList = () => {
           <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">
             Easily locate the best hospitals near you with our smart search and recommendations.
           </p>
-          {/* <SearchBar /> */}
+          <SearchBar
+            setSelectedCountry={setSelectedCountry} 
+            setSelectedTreatment={setSelectedTreatment} 
+            onSearch={handleSearch} 
+          />
         </div>
       </ReusableHero>
 
@@ -138,14 +152,24 @@ const HospitalList = () => {
         <p className="text-right text-gray-500 text-lg -mt-6 mr-12">Found {hospitalData.length} Results
         </p>
 
-        <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+        {/* <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
 
           {hospitalData.map((hospital) => (
             
             <HospitalCard key={hospital.id} {...hospital} />
             
           ))}
+        </div> */}
+
+        <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+          {filteredHospitals.length > 0 ? (
+            filteredHospitals.map((hospital) => <HospitalCard key={hospital.id} {...hospital} />)
+          ) : (
+            <p className="text-gray-500 text-lg col-span-full">No matching hospitals found.</p>
+          )}
         </div>
+
+
       </div>
     </>
   );
