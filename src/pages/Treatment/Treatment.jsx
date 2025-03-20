@@ -7,9 +7,8 @@ import { Icon } from "@iconify/react";
 import { faqs, treatment } from "../../data/constants";
 import SuccessStories from "../../components/SucessStories";
 import FAQ from "../../components/Faq";
-import SingleTreatent from "./SingleTreatment";
+// import SingleTreatent from "./SingleTreatment";
 import { Link } from "react-router-dom";
-import Popular from "../../components/Popular";
 const Treatment = () => {
   return (
     <>
@@ -88,7 +87,7 @@ const Treatment = () => {
  </div>
       </div>
 
-      <Popular />
+     
       <SuccessStories />
       <FAQ faqs={faqs} /> 
     </>

@@ -39,7 +39,7 @@ const SuccessStories = () => {
         </h1>
 
         {/* Flex container for hover animation */}
-        <div className="flex mt-8 gap-6">
+        <div className="flex mt-15 gap-6">
           {stories.map((story, index) => (
             <div key={index} className="group flex-1 transition-all duration-500 hover:flex-[1.5]">
               <div className="bg-white rounded-2xl overflow-hidden relative">

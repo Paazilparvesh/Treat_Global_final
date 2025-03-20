@@ -63,7 +63,7 @@ const Form = ({title,subTitle,data}) => {
 
   return (
     <section className="py-10  my-10 bg-[#ECF2FF] mx-auto w-[1800px] rounded-4xl">
-      <div className="container mx-auto px-4 lg:px-10  flex flex-col items-center xl:flex-row gap-12">
+      <div className=" mx-10 px-4 lg:px-10  flex flex-col items-center xl:flex-row gap-12">
         <div className="flex-1">
           <form
             className="space-y-6 bg-white p-8 shadow-lg rounded-4xl"
@@ -144,10 +144,10 @@ const Form = ({title,subTitle,data}) => {
               <div key={index} className="flex gap-4 items-center mt-8 mb-6">
                 <div className="border-l-2   border-[#5057E5] h-20"></div>
                 <div>
-                  <h2 className="text-lg font-figtree  md:text-xl font-semibold text-[#2D3436]">
+                  <h2 className="w-full font-figtree  md:text-2xl font-semibold text-[#2D3436]">
                     {data.title}
                   </h2>
-                  <p className="text-[#666666] text-sm md:text-base font-manrope">{data.des}</p>
+                  <p className="text-[#666666] w-90 text-sm md:text-base font-manrope">{data.des}</p>
                 </div>
               </div>
             ))}

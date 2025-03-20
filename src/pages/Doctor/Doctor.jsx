@@ -4,11 +4,11 @@ import hero from "../../assets/images/treatment.webp";
 import { useState } from "react";
 import { Button } from "../../components/Button";
 import { Icon } from "@iconify/react";
-import { heading } from "../../assets/styles/Style";
 import DoctorCard from "../../components/DoctorCard";
+import doctorsData from "../../data/constants";
 
 const Doctor = () => {
-  const doctors = Array.from({ length: 4 });
+  // const doctors = Array.from({ length: 12 });
   const [treatment, setTreatment] = useState("");
   const [hospital, setHospital] = useState("");
   const [country, setCountry] = useState("");
@@ -24,16 +24,16 @@ const Doctor = () => {
   };
   return (
     <>
-      <ReusableHero heroImage={hero}>
-        <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
-          <p className="font-manrope text-sm  md:text-lg flex  items-center gap-4">
-            {/* Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "} */}
+      <ReusableHero heroImage={hero} className="h-[550px]">
+        <div className="flex justify-center text-center mt-20 md:text-start px-4 md:ps-10 py-20 lg: min-h-[450px] flex-col gap-4 text-white">
+          <div className=" mx-8 font-manrope text-sm  md:text-lg flex  items-center gap-4">
+            Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
             <span> Doctors</span>
-          </p>
-          <h1 className="lg:text-3xl font-semibold text-xl font-figtree md:text-2xl ">
+          </div>
+          <h1 className=" px-8 leading-14 lg:text-5xl font-semibold text-xl font-figtree md:text-2xl ">
             Find Your Doctors
           </h1>
-          <p className="max-w-[784px] text-lg font-manrope font-medium">
+          <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">
             Find the best Doctors near you with ease. Get quick access to
             trusted healthcare facilities.
           </p>
@@ -144,21 +144,22 @@ const Doctor = () => {
         </div>
       </ReusableHero>
 
-      <div className="flex justify-between px-4 flex-wrap gap-4 container mx-auto py-10">
-        <h1 className={heading}>
+      <div className="p-6 text-center">
+        <h1 className="text-4xl font-bold text-left text-blue-800 mb-2 ml-12">
           Related <span className="text-secondary">Doctors</span>{" "}
         </h1>
-        <span className="text-gray-500 font-manrope  font-bold">
-          Found 13 Results
-        </span>
-      </div>
+        <p className="text-right text-gray-500 text-lg -mt-6 mr-12">
+          Found {doctorsData.length} Results
+        </p>
 
-      <div className=" px-4 pb-20  container mx-auto ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-stretch gap-6 p-4">
-      {doctors.map((_,index) => (
-        <DoctorCard key={index}/>
-      ))}
-    </div>
+        <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+
+          {doctorsData.map((doctor) => (
+
+            <DoctorCard key={doctor.id} {...doctor}/>
+
+          ))}
+        </div>
       </div>
     </>
   );

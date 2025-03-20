@@ -5,8 +5,8 @@ import { Icon } from "@iconify/react";
 import { Button } from "./Button";
 import doctorsData from "../data/constants";
 
-function Popular() {
-  const doctors = doctorsData.slice(4,8); // get first 4 doctors from the array
+function PopularDoctors() {
+  const doctors = doctorsData.slice(4,9); // get first 4 doctors from the array
   return (
     <>
       <div className=" mx-15 -mr-8 ">
@@ -38,9 +38,9 @@ function Popular() {
           </div>
          </div>
 
-          <p className="max-w-2xl mr-22 text-end text-[#666666] font-manrope"> Access world-renowned medical experts specializing in various fields, offering advanced treatments, personalized care, and trusted second opinions for your health needs.</p>
+          <p className="max-w-2xl mr-28 text-end text-[#666666] font-manrope"> Access world-renowned medical experts specializing in various fields, offering advanced treatments, personalized care, and trusted second opinions for your health needs.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-stretch gap-0 p-4">
+        <div className="grid w-full -mx-15 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:place-content-evenly lg:place-items-center p-5">
           {doctors.map((doctor) => (
             <DoctorCard key={doctor.id} doctor={doctor} />
           ))}
@@ -50,4 +50,4 @@ function Popular() {
   );
 }
 
-export default Popular;
+export default PopularDoctors;

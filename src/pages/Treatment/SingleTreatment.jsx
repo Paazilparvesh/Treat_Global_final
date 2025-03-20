@@ -1,10 +1,10 @@
-
+import React from "react";
 import { Icon } from "@iconify/react";
 import { faqs, singleTreatment } from "../../data/constants";
-
 import FAQ from "../../components/Faq";
 import Appointment from "../../components/Appoiment";
-import Popular from "../../components/Popular";
+import PopularHospitals from "../../components/PopularHospitals";
+import PopularDoctors from "../../components/PopularDoctors";
 
 const SingleTreatment = () => {
   
@@ -93,11 +93,11 @@ const SingleTreatment = () => {
 
         </div>
       </div>
-      
-      <Popular/>
-      
+      <div className="w-full mx-10">
+        <PopularHospitals/>
+      </div>
       <FAQ faqs={faqs}/>
-      
+      <PopularDoctors/>
     </div>
   );
 };

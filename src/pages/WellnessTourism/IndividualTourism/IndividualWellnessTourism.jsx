@@ -2,22 +2,22 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import image02 from "/src/assets/images/medical.webp";
 import { trainingDetails } from "../../../data/mockData";
-// import { IoLocationSharp } from "react-icons/io5";
-// import { CiShare1 } from "react-icons/ci";
+import { IoLocationSharp } from "react-icons/io5";
+import { CiShare1 } from "react-icons/ci";
 import "./IndividualWellnessTourism.css";
-// import SelectForm from "../../../components/forms/select";
-// import InputForm from "../../../components/forms/input";
+import SelectForm from "../../../components/forms/select";
+import InputForm from "../../../components/forms/input";
 import useCustomState from "../../../hooks/useCustomState";
-// import Button from "../../../components/common/buttons";
-// import { IoLogoWhatsapp } from "react-icons/io";
+import Button from "/src/components/buttons.jsx";
+import { IoLogoWhatsapp } from "react-icons/io";
 // import Modal from "../../../components/common/modal";
-import { headSubHead } from "../../../data/constants";
+// import { headSubHead } from "../../../data/constants";
 // import RelatedTourPack from "../../../components/common/relatedTourPack";
 
 const IndividualPage = () => {
   const [guest, setGuest] = useCustomState("");
 
-  const [isModalOpen, setModalOpen] = useCustomState(false);
+  // const [isModalOpen, setModalOpen] = useCustomState(false);
 
   const handleGuestCount = (value) => {
     setGuest(value);
@@ -28,10 +28,10 @@ const IndividualPage = () => {
 
   if (!tourismDetail) return <p>Package Not Found.</p>;
 
-  const relatedTours = trainingDetails.filter((item) => item.id !== tourismDetail.id && (item.location === tourismDetail.location || item.treatment === tourismDetail.treatment));
+  // const relatedTours = trainingDetails.filter((item) => item.id !== tourismDetail.id && (item.location === tourismDetail.location || item.treatment === tourismDetail.treatment));
 
   return (
-    <div className="container">
+    <div className=" mx-15 mr-15">
       <div className="tourismHeadImg">
         <div className="tourismHead">
           <h1>{tourismDetail.title}</h1>
@@ -46,7 +46,7 @@ const IndividualPage = () => {
                   <p>({tourismDetail.rating.reviews} reviews)</p>
                 </div>
               </div>
-              <div className="reviewsLocation">
+              <div className="reviewsLocation mx-50">
                 <IoLocationSharp className="reviewsIcon" />
                 <p>{tourismDetail.location}</p>
               </div>
@@ -73,30 +73,30 @@ const IndividualPage = () => {
                     <Button
                       className="overlayBtn"
                       label="View More"
-                      onClick={() => setModalOpen(true)}
+                      // onClick={() => setModalOpen(true)}
                     />
                   </div>
                 )}
               </div>
             ))}
 
-            <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+            {/* <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
               <div className="modalImages">
                 {tourismDetail.images.map((image, index) => (
                   <img key={index} src={image} alt={image} />
                 ))}
               </div>
-            </Modal>
+            </Modal> */}
           </div>
         </div>
       </div>
 
       <div className="tourismDescContainer">
-        <div className="tourismDesc">
+        <div className="tourismDesc shadow-2xl p-5 ">
           <div className="tourismDescAlign">
-            <div className="tourismMainDesc">
-              <h4>{tourismDetail.mainDescHead}</h4>
-              <p>{tourismDetail.mainDesc}</p>
+            <div className="tourismMainDesc ">
+              <h1 className="text-3xl ">{tourismDetail.mainDescHead}</h1>
+              <p className="text-[20px] leading-relaxed">{tourismDetail.mainDesc}</p>
             </div>
             {tourismDetail.description.map((item, index) => (
               <div className="tourismSubContent" key={index}>
@@ -167,34 +167,35 @@ const IndividualPage = () => {
         </div>
       </div>
 
-      <div className="whereYou">
-        <h2>Where you'll be</h2>
-        <div className="whereYouMap">
+      <div className="w-full mb-15">
+        <h1 className="text-3xl mb-8">Where you'll be</h1>
+        <div className="">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15555.821358092993!2d80.2193408!3d12.910592!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1740396334607!5m2!1sen!2sin"
-            height="480"
-            style={{ border: 0, borderRadius: "4px" }}
+            height="500"
+            width="1780"
+            style={{ border: 0, borderRadius: "8px" }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer"
             title="TourismMap"
           ></iframe>
         </div>
-        <h3>{tourismDetail.hospital}, location</h3>
-        <p>
+        <h3 className="mt-8 text-3xl">{tourismDetail.hospital}, location</h3>
+        <p className="mt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat
           quisquam inventore. Aspernatur dolore numquam soluta, voluptatibus ut
           non natus!
         </p>
       </div>
 
-        <div className="relatedTourHead">
+        {/* <div className="relatedTourHead">
           <p className="head">{headSubHead.relatedTourPack.head}</p>
-          <p className="subHead">{headSubHead.relatedTourPack.subHead}</p>
-        </div>
-      <div className="relatedTourPack">
+          <p className="subHead">{headSubHead.relatedTourPack.subHead}</p> */}
+        {/* </div> */}
+      {/* <div className="relatedTourPack">
         {relatedTours.length > 0 && (<RelatedTourPack relatedTours = {relatedTours} />)}
-      </div>
+      </div> */}
     </div>
   );
 };

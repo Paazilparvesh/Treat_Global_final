@@ -31,7 +31,7 @@
   .tourismDesc {
     max-height: 567px;
     overflow: scroll;
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     background-color: var(--white);
     border-radius: 24px;
@@ -78,14 +78,14 @@
     gap: 70px;
     justify-content: space-between;
   }
-  
   .priceInfo {
-    max-width: 370px;
+    max-width: 500px;
     width: 100%;
     border-radius: 8px;
     border: 1px solid #e5e7eb;
     box-shadow: 0px 10px 10px #1f29370a, 0px 20px 25px #1f29371a;
     background-color: #f1f4fb;
+    margin: 0px 10px 0px 0px;
   }
   
   .priceInfoAlign {
@@ -212,9 +212,6 @@
     text-align: center;
   }
   
-  .whereYou {
-    padding: 80px 0;
-  }
   
   .whereYou h2 {
     font-family: var(--font-inter);
@@ -240,10 +237,7 @@
     max-width: 1340px;
   }
   
-  .whereYouMap iframe {
-    width: 100%;
-  }
-  
+
   .tourismImg {
     display: grid;
     grid-template-columns: 1fr 1fr;

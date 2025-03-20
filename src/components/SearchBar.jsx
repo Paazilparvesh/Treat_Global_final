@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { Button } from "./Button";
 
-export const SearchBar = () => {
+export const SearchBar = ( { setSelectedCountry, setSelectedTreatment, onSearch}) => {
   const [country, setCountry] = useState("New York, USA");
   const [treatment, setTreatment] = useState("PRP Treatment");
-  const [phoneCode, setPhoneCode] = useState("+91");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  // const [phoneCode, setPhoneCode] = useState("+91");
+  // const [phoneNumber, setPhoneNumber] = useState("");
 
   return (
     <div className="bg-white shadow-md rounded-2xl mt-5  p-4 w-full max-w-8xl mx-auto">
@@ -51,7 +51,7 @@ export const SearchBar = () => {
           <span className="text-gray-500 font-manrope text-sm">Number</span>
           <div className="flex items-center  rounded-lg p-3 mt-1">
             <Icon icon="mdi:phone-outline" className="text-gray-400 text-xl" />
-            <select
+            {/* <select
               value={phoneCode}
               onChange={(e) => setPhoneCode(e.target.value)}
               className="bg-transparent outline-none w-16 text-black font-medium ml-2"
@@ -59,21 +59,30 @@ export const SearchBar = () => {
               <option>+91</option>
               <option>+1</option>
               <option>+44</option>
-            </select>
-            <input
+            </select> */}
+            {/* <input
               type="text"
               placeholder="Enter your Number"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
               className="bg-transparent outline-none w-full text-black font-medium ml-2"
-            />
+            /> */}
           </div>
         </div>
         <div className="h-12 border hidden lg:block border-gray-300"></div>
         <div className="flex-1/3">
           <Button
             name="Chat With Health Consultant"
-            startIcon={<Icon icon="mdi:whatsapp" className="text-xl" />}
+            startIcon={<Icon icon="mdi:whatsapp" className="text-xl"
+               />}
+            
+          />
+          <Button name="Search" 
+                  startIcon={<Icon icon="mdi:magnify" className="text-xl" />} 
+                  onClick={() => {  setSelectedCountry(country);
+                                    setSelectedTreatment(treatment);
+                                    onSearch();
+                  }}
           />
         </div>
       </div>

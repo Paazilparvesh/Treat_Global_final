@@ -9,8 +9,8 @@ import { Icon } from "@iconify/react";
 import { Button } from "../../components/Button";
 import { homeWhyChooseUS } from "../../data/constants";
 import SuccessStories from "../../components/SucessStories";
-import Popular from "../../components/Popular";
 import video01 from "../../assets/videos/homevideo1.mp4";
+import PopularDoctors from "../../components/PopularDoctors";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -50,7 +50,7 @@ const Home = () => {
       <Services />
       <About  />
       <Form title="Book An Appointment" subTitle={<>Why <span className="text-[#5057E5]">Choose Us</span> </>} data={homeWhyChooseUS}  />
-      <Popular/>
+      <PopularDoctors/>
       <SuccessStories/>
       
     </>
