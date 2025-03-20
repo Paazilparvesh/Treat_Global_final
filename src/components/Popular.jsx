@@ -1,6 +1,5 @@
 import React from "react";
 import DoctorCard from "./DoctorCard";
-import { heading } from "../assets/styles/Style";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { Button } from "./Button";
@@ -10,10 +9,10 @@ function Popular() {
   const doctors = doctorsData.slice(4,8); // get first 4 doctors from the array
   return (
     <>
-      <div className=" px-4 pb-10 mx-10 ">
+      <div className=" mx-15 -mr-8 ">
         <div className="flex flex-wrap items-center py-5 justify-between">
          <div>
-         <h1 className={heading}>
+         <h1 className="lg:text-5xl font-semibold font-figtree text-3xl  text-[#29569c] ">
             Popular Top <span className="text-secondary">Doctors</span>
           </h1>
           <div className="flex gap-2 flex-wrap mt-4">
@@ -39,7 +38,7 @@ function Popular() {
           </div>
          </div>
 
-          <p className="max-w-2xl text-end text-[#666666] font-manrope"> Access world-renowned medical experts specializing in various fields, offering advanced treatments, personalized care, and trusted second opinions for your health needs.</p>
+          <p className="max-w-2xl mr-22 text-end text-[#666666] font-manrope"> Access world-renowned medical experts specializing in various fields, offering advanced treatments, personalized care, and trusted second opinions for your health needs.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-stretch gap-0 p-4">
           {doctors.map((doctor) => (

@@ -193,6 +193,14 @@ export default function IndividualHospital() {
           ))}
         </div>
         <div className="right-content">
+        <div className="bg-[#005897] text-white rounded-t-lg p-6">
+            <h1 className="font-figtree font-bold text-center text-xl md:text-2xl lg:text-3xl">
+              Request Appointment
+            </h1>
+            <p className="font-manrope mt-2 text-center w-90 mx-auto text-[18px]">
+              Please provide your information, and one of our professionals will contact you
+            </p>
+          </div>
           <Appoinment/>
         </div>
       </div>
