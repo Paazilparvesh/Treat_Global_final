@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-// import { doctorsData } from "../data/constants";
 
 
 export default function DoctorCard({ name, field, experience, hospital, image, id }) {
@@ -43,7 +42,7 @@ export default function DoctorCard({ name, field, experience, hospital, image, i
           {hospital}
         </p>
 
-        <Link to={`/hospital/${id}`}>
+        <Link to={`/doctors/${id}`}>
           <button className="w-full cursor-pointer bg-secondary text-white mt-4 py-2 rounded-3xl border hover:bg-transparent hover:border-primary hover:text-primary transition">
             Request Appointment
           </button>

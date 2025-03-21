@@ -11,6 +11,8 @@ import { homeWhyChooseUS } from "../../data/constants";
 import SuccessStories from "../../components/SucessStories";
 import video01 from "../../assets/videos/homevideo1.mp4";
 import PopularDoctors from "../../components/PopularDoctors";
+import PopularHospitals from "/src/components/PopularHospitals.jsx"
+import BlogSection from "/src/components/ReusableBlog.jsx";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -49,9 +51,11 @@ const Home = () => {
       </ReusableHero>
       <Services />
       <About  />
+      <PopularHospitals/>
       <Form title="Book An Appointment" subTitle={<>Why <span className="text-[#5057E5]">Choose Us</span> </>} data={homeWhyChooseUS}  />
       <PopularDoctors/>
       <SuccessStories/>
+      <BlogSection/>
       
     </>
   );

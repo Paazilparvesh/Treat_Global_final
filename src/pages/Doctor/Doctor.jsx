@@ -6,21 +6,22 @@ import { Button } from "../../components/Button";
 import { Icon } from "@iconify/react";
 import DoctorCard from "../../components/DoctorCard";
 import doctorsData from "../../data/constants";
+import SearchBar from "/src/components/SearchBar.jsx";
 
 const Doctor = () => {
-  // const doctors = Array.from({ length: 12 });
-  const [treatment, setTreatment] = useState("");
-  const [hospital, setHospital] = useState("");
-  const [country, setCountry] = useState("");
-  const [city, setCity] = useState("");
+  const [selectedTreatment, setSelectedTreatment] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
+  const [filteredDoctors, setFilteredDoctors] = useState(doctorsData);
 
-  const handleSearch = () => {
-    console.log({
-      treatment,
-      hospital,
-      country,
-      city,
-    });
+  const handleDoctorSearch = () => {
+    const filtered = doctorsData.filter(
+      (doctor) =>
+        (!selectedTreatment || doctor.treatment === selectedTreatment) &&
+        (!selectedCountry || doctor.country === selectedCountry) &&
+        (!selectedCity || doctor.city === selectedCity)
+    );
+    setFilteredDoctors(filtered);
   };
   return (
     <>
@@ -37,7 +38,7 @@ const Doctor = () => {
             Find the best Doctors near you with ease. Get quick access to
             trusted healthcare facilities.
           </p>
-          <div className="bg-white text-left shadow-md rounded-2xl mt-5 p-4 w-full mx-auto">
+          {/* <div className="bg-white text-left shadow-md rounded-2xl mt-5 p-4 w-full mx-auto">
             <div className="flex flex-wrap items-center border border-gray-300 rounded-lg p-4 gap-4">
               <div className="flex-1 min-w-[200px]">
                 <span className="text-gray-500 font-manrope text-sm">
@@ -140,7 +141,24 @@ const Doctor = () => {
                 <Button name="Chat Support" />
               </div>
             </div>
-          </div>
+          </div> */}
+          <SearchBar
+          
+            setSelectedTreatment={setSelectedTreatment} 
+            setSelectedCountry={setSelectedCountry} 
+            setSelectedCity={setSelectedCity}
+            onSearch={handleDoctorSearch} 
+      
+            showTreatment={true}
+            showCountry={true}
+            showCity={true}
+            showDepartment={false} 
+            showHospital={false} 
+            showDoctor={false} 
+          
+          />
+
+
         </div>
       </ReusableHero>
 
@@ -149,17 +167,26 @@ const Doctor = () => {
           Related <span className="text-secondary">Doctors</span>{" "}
         </h1>
         <p className="text-right text-gray-500 text-lg -mt-6 mr-12">
-          Found {doctorsData.length} Results
+          Found {filteredDoctors.length} Results
         </p>
 
-        <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+        {/* <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
 
-          {doctorsData.map((doctor) => (
+          {filteredDoctors.map((doctor) => (
 
             <DoctorCard key={doctor.id} {...doctor}/>
 
           ))}
+        </div> */}
+
+        <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+          {filteredDoctors.length > 0 ? (
+            filteredDoctors.map((doctor) => <DoctorCard key={doctor.id} {...doctor} />)
+          ) : (
+            <p className="text-gray-500 text-lg col-span-full">No matching blogs found.</p>
+          )}
         </div>
+
       </div>
     </>
   );

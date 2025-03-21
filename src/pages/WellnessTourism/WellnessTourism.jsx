@@ -19,6 +19,7 @@ import useCustomState from "../../hooks/useCustomState";
  import { MdOutlineAccessTimeFilled } from "react-icons/md";
  import { BsPersonFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
+import BlogSection from "/src/components/ReusableBlog.jsx";
 
  const { RangePicker } = DatePicker;
 
@@ -282,6 +283,9 @@ const WellnessTourismPage = () => {
           </div>
         </div>
       </div>
+
+      <BlogSection/>
+
     </div>
   );
 };

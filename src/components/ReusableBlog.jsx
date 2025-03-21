@@ -5,7 +5,7 @@ const BlogSection = ({ blogs }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="mx-10 mt-20 px-auto">
+    <div className="mx-10 mt-20 mb-10 px-auto">
       <h1 className="text-[32px] sm:text-[38px] lg:text-[42px] font-bold text-[#29569C] sm:mb-12 mb-8 text-center sm:text-start">
         Explore <span className="text-[#3D77F6]">Our Blog</span>
       </h1>

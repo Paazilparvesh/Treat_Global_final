@@ -62,7 +62,7 @@ const Form = ({title,subTitle,data}) => {
   };
 
   return (
-    <section className="py-10  my-10 bg-[#ECF2FF] mx-auto w-[1800px] rounded-4xl">
+    <section id="formsection" className="py-10  my-10 bg-[#ECF2FF] mx-auto w-[1800px] rounded-4xl">
       <div className=" mx-10 px-4 lg:px-10  flex flex-col items-center xl:flex-row gap-12">
         <div className="flex-1">
           <form
@@ -115,7 +115,7 @@ const Form = ({title,subTitle,data}) => {
               placeholder="Describe the medical problem"
             />
 
-            <div className="flex items-center gap-2">
+            <div id="formbox" className="flex items-center gap-2">
               <input type="checkbox" id="terms" required />
               <label className={inputLabel} htmlFor="terms">
                 By submitting, I agree to the terms and conditions.

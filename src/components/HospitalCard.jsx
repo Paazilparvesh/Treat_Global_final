@@ -9,7 +9,7 @@ return (
     <div className="relative">
         <img
         src={image}
-        alt={name}
+        alt={`${name}'s Photo`}
         className="h-80 w-full object-cover rounded-t-2xl"
         />
     </div>

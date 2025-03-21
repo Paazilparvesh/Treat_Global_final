@@ -18,7 +18,7 @@ const Services = () => {
             all your health and wellness needs.
           </p>
           <div className="flex gap-4 flex-wrap justify-center mt-4">
-           <Link to="/doctors"> <Button
+           <Link to="/treatments"> <Button
               name="View All"
               endIcon={
                 <Icon
@@ -38,7 +38,9 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="flex justify-evenly w-full mt-15">
+      <div 
+      id="services"
+      className="flex justify-evenly w-full mt-15">
         {homeTreatments.map((data, i) => (
           <div
             key={i}
@@ -53,10 +55,12 @@ const Services = () => {
               <p>{data.des}</p>
             </div>
             <div>
-              <button>
-                {data.btnLink}
-                <span className="icon">→</span>
-              </button>
+              <Link to="/treatments">
+                <button className="cursor-pointer">
+                  {data.btnLink}
+                  <span className="icon">→</span>
+                </button>
+              </Link>
             </div>
           </div>
         ))}

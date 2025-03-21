@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 const About = () => {
   return (
-    <section className="flex justify-between flex-wrap px-2  container mx-auto w-full gap-8 py-10">
+    <section id="aboutpage" className="flex justify-evenly flex-wrap px-2 mx-1 w-full gap-8 py-10">
       <div className="max-w-[900px] flex-shrink bg-white">
         <img src={about_img} alt="About Treat Global" className="w-full bg-white" />
       </div>

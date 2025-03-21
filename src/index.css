@@ -30,3 +30,45 @@ input[type="number"] {
 }
 
 
+@media screen and (max-width:1440px) {
+  #reusable{
+    width: 1380px;
+  }
+  #search{
+    width: 1300px;
+  }
+  #services{
+    width: 1350px;
+    gap: 35px;
+    margin-left: 40px;
+  }
+  #aboutpage{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 60px;
+  }
+  #aboutpage img{
+    width: 550px;
+  }
+  #formsection{
+    width: 1350px;
+    gap: 20px;
+  }
+  #formbox{
+    gap: 2px;
+  }
+  #formbox label{
+    font-size: 20px;
+    white-space: nowrap;
+    align-items: center;
+  }
+  
+  #popular h1{
+    font-size: 38px;
+  }
+  #access{
+    font-size: 20px;
+  }
+ 
+}

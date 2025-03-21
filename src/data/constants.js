@@ -21,111 +21,111 @@ import root from '../assets/svg/root.svg'
 import implant from '../assets/svg/implant.svg'
 import single_treatment from "../assets/images/single-treatment.webp"
 import dr from "../assets/images/Dr. Hitesh.png";
-// import image10 from "/src/assets/images/hospital.webp";
+import image10 from "/src/assets/images/hospital.webp";
 
 import routesPath from "../routes/routesPath";
 
 
 export const subHeader = {name: 'Unlock the Magic Life with Treat Global -Your Gateway to Expert Care and Wellness.', link: 'Join As A Partner'}
 
-// export const hospitalData = [
-//       {
-//         id: 1,
-//         name: "Apollo Hospitals",
-//         location: "India, Chennai",
-//         rating: 4.96,
-//         reviews: 672,
-//         image: image10 , 
-//       },
-//       {
-//         id: 2,
-//         name: "Fortis Hospital",
-//         location: "India, Mumbai",
-//         rating: 4.85,
-//         reviews: 512,
-//         image: image10 ,
-//       },
-//       {
-//         id: 3,
-//         name: "Max Healthcare",
-//         location: "India, Delhi",
-//         rating: 4.75,
-//         reviews: 430,
-//         image: image10 ,
-//       },
-//       {
-//         id: 4,
-//         name: "Medanta Hospital",
-//         location: "India, Gurgaon",
-//         rating: 4.80,
-//         reviews: 390,
-//         image: image10 ,
-//       },
-//       {
-//         id: 5,
-//         name: "Manipal Hospital",
-//         location: "India, Bangalore",
-//         rating: 4.70,
-//         reviews: 350,
-//         image: image10 ,
-//       },
-//       {
-//         id: 6,
-//         name: "Manipal Hospital",
-//         location: "India, Bangalore",
-//         rating: 4.70,
-//         reviews: 350,
-//         image: image10 ,
-//       },
-//       {
-//         id: 7,
-//         name: "Manipal Hospital",
-//         location: "India, Bangalore",
-//         rating: 4.70,
-//         reviews: 350,
-//         image: image10 ,
-//       },
-//       {
-//         id: 8,
-//         name: "Manipal Hospital",
-//         location: "India, Bangalore",
-//         rating: 4.70,
-//         reviews: 350,
-//         image: image10 ,
-//       },
-//       {
-//         id: 9,
-//         name: "Manipal Hospital",
-//         location: "India, Bangalore",
-//         rating: 4.70,
-//         reviews: 350,
-//         image: image10 ,
-//       },
-//       {
-//         id: 10,
-//         name: "Manipal Hospital",
-//         location: "India, Bangalore",
-//         rating: 4.70,
-//         reviews: 350,
-//         image: image10 ,
-//       },  
-//       {
-//         id: 11,
-//         name: "Manipal Hospital",
-//         location: "India, Bangalore",
-//         rating: 4.70,
-//         reviews: 350,
-//         image: image10 ,
-//       },  
-//       {
-//         id: 12,
-//         name: "Manipal Hospital",
-//         location: "India, Bangalore",
-//         rating: 4.70,
-//         reviews: 350,
-//         image: image10 ,
-//       },  
-// ];
+export const hospitalData = [
+      {
+        id: 1,
+        name: "Apollo Hospitals",
+        location: "India, Chennai",
+        rating: 4.96,
+        reviews: 672,
+        image: image10 , 
+      },
+      {
+        id: 2,
+        name: "Fortis Hospital",
+        location: "India, Mumbai",
+        rating: 4.85,
+        reviews: 512,
+        image: image10 ,
+      },
+      {
+        id: 3,
+        name: "Max Healthcare",
+        location: "India, Delhi",
+        rating: 4.75,
+        reviews: 430,
+        image: image10 ,
+      },
+      {
+        id: 4,
+        name: "Medanta Hospital",
+        location: "India, Gurgaon",
+        rating: 4.80,
+        reviews: 390,
+        image: image10 ,
+      },
+      {
+        id: 5,
+        name: "Manipal Hospital",
+        location: "India, Bangalore",
+        rating: 4.70,
+        reviews: 350,
+        image: image10 ,
+      },
+      {
+        id: 6,
+        name: "Manipal Hospital",
+        location: "India, Bangalore",
+        rating: 4.70,
+        reviews: 350,
+        image: image10 ,
+      },
+      {
+        id: 7,
+        name: "Manipal Hospital",
+        location: "India, Bangalore",
+        rating: 4.70,
+        reviews: 350,
+        image: image10 ,
+      },
+      {
+        id: 8,
+        name: "Manipal Hospital",
+        location: "India, Bangalore",
+        rating: 4.70,
+        reviews: 350,
+        image: image10 ,
+      },
+      {
+        id: 9,
+        name: "Manipal Hospital",
+        location: "India, Bangalore",
+        rating: 4.70,
+        reviews: 350,
+        image: image10 ,
+      },
+      {
+        id: 10,
+        name: "Manipal Hospital",
+        location: "India, Bangalore",
+        rating: 4.70,
+        reviews: 350,
+        image: image10 ,
+      },  
+      {
+        id: 11,
+        name: "Manipal Hospital",
+        location: "India, Bangalore",
+        rating: 4.70,
+        reviews: 350,
+        image: image10 ,
+      },  
+      {
+        id: 12,
+        name: "Manipal Hospital",
+        location: "India, Bangalore",
+        rating: 4.70,
+        reviews: 350,
+        image: image10 ,
+      },  
+];
 
 
 export const navbar = [

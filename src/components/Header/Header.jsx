@@ -40,7 +40,7 @@ const Header = () => {
               <div key={item.path}>
                 <Link
                   to={item.path}
-                  className={`text-black hover:text-primary ${
+                  className={`text-black p-3.5 hover:text-primary hover:bg-[#ffd257] ${
                     location.pathname === item.path
                       ? "border-b-2 border-primary font-medium"
                       : ""
