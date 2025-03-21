@@ -21,12 +21,12 @@ const About = () => {
           seamless, transparent experience for users, partners, and corporate
           clients.
         </p>{" "}
-        <Button
+        {/* <Button
           name="About Us"
           endIcon={
             <Icon icon="mingcute:arrow-right-line" width="60px" height="30px" />
           } 
-        />
+        /> */}
       </div>
     </section>
   );
