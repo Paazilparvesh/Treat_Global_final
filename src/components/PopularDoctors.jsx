@@ -40,7 +40,8 @@ function PopularDoctors() {
 
           <p id="access" className="max-w-2xl mr-28 text-end text-[#666666] font-manrope"> Access world-renowned medical experts specializing in various fields, offering advanced treatments, personalized care, and trusted second opinions for your health needs.</p>
         </div>
-        <div className="grid gap-0 w-full -mx-15 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-center p-5">
+        <div className="grid -mx-18 mr-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-content-evenly lg:place-items-center p-5">
+        {/* <div className="flex  items-center justify-around p-5"> */}
           {doctors.map((doctor) => (
             <DoctorCard key={doctor.id} {...doctor} />
           ))}

@@ -28,7 +28,7 @@ import routesPath from "../routes/routesPath";
 
 export const subHeader = {name: 'Unlock the Magic Life with Treat Global -Your Gateway to Expert Care and Wellness.', link: 'Join As A Partner'}
 
-export const hospitalData = [
+const hospitalData = [
       {
         id: 1,
         name: "Apollo Hospitals",
@@ -124,9 +124,9 @@ export const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
-      },  
+      },
 ];
-
+export { hospitalData };
 
 export const navbar = [
     {name: 'Medical Opinion', path: `${routesPath.MEDICAL_OPINION}`},

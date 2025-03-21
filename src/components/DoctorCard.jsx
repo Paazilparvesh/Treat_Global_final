@@ -6,7 +6,7 @@ export default function DoctorCard({ name, field, experience, hospital, image, i
 
   return (
 
-    <div className="max-w-sm bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200">
+    <div className="w-[350px] bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200">
       <div className="relative">
         <img
           src={image}

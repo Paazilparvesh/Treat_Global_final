@@ -145,13 +145,16 @@ function Blog() {
             setSelectedHospital={setSelectedHospital} 
             setSelectedDoctor={setSelectedDoctor}
             onSearch={handleBlogSearch} 
-            showCountry={false} 
+
+            showCountry={false}
+            showCity={false}
             showTreatment={false} 
             showDepartment={true} 
             showHospital={true} 
             showDoctor={true} 
 
           />
+          
         </div>
       </ReusableHero>
 
