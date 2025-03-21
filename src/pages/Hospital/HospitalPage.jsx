@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import hero_image from "../../assets/images/treatment.webp";
-import { SearchBar } from "../../components/SearchBar";
+import  SearchBar  from "/src/components/SearchBar.jsx";
 import { ReusableHero }from "/src/components/ReusableHero.jsx";
 import HospitalCard from "../../components/HospitalCard";
 import image10 from "/src/assets/images/hospital.webp";
@@ -112,7 +112,7 @@ const HospitalList = () => {
   const [selectedTreatment, setSelectedTreatment] = useState("");  
   const [filteredHospitals, setFilteredHospitals] = useState(hospitalData);
 
-  const handleSearch = () => {
+  const handleHospitalSearch = () => {
     const filtered = hospitalData.filter(
       (hospital) =>
         (!selectedCountry || hospital.location.includes(selectedCountry)) &&
@@ -139,7 +139,7 @@ const HospitalList = () => {
           <SearchBar
             setSelectedCountry={setSelectedCountry} 
             setSelectedTreatment={setSelectedTreatment} 
-            onSearch={handleSearch} 
+            onSearch={handleHospitalSearch} 
           />
         </div>
       </ReusableHero>
@@ -149,17 +149,8 @@ const HospitalList = () => {
         <h2 className="text-4xl font-bold text-left text-blue-800 mb-2 ml-12">
           Related <span className="text-blue-500">Hospitals</span>
         </h2>
-        <p className="text-right text-gray-500 text-lg -mt-6 mr-12">Found {hospitalData.length} Results
+        <p className="text-right text-gray-500 text-lg -mt-6 mr-12">Found {filteredHospitals.length} Results
         </p>
-
-        {/* <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
-
-          {hospitalData.map((hospital) => (
-            
-            <HospitalCard key={hospital.id} {...hospital} />
-            
-          ))}
-        </div> */}
 
         <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
           {filteredHospitals.length > 0 ? (
@@ -168,7 +159,6 @@ const HospitalList = () => {
             <p className="text-gray-500 text-lg col-span-full">No matching hospitals found.</p>
           )}
         </div>
-
 
       </div>
     </>

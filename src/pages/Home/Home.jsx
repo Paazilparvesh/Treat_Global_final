@@ -3,7 +3,7 @@ import Services from "./Services";
 import About from "./About";
 import Form from "../../components/Form";
 import { ReusableHero } from "../../components/ReusableHero";
-import { SearchBar } from "../../components/SearchBar";
+import  SearchBar  from "/src/components/SearchBar.jsx";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { Button } from "../../components/Button";

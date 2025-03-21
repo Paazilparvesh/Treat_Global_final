@@ -2,13 +2,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BlogCard = ({ imageUrl, date, title, description, tags }) => {
+const BlogCard = ({ id, image, date, title, description, tags }) => {
   return (
     <div className="relative max-w-[424px] bg-white rounded-2xl shadow-lg overflow-hidden">
       {/* Image */}
       <div className="relative">
         <img
-          src={imageUrl}
+          src={image}
           alt={title}
           className="h-[326px] w-full object-cover rounded-t-2xl"
         />
@@ -33,7 +33,7 @@ const BlogCard = ({ imageUrl, date, title, description, tags }) => {
         </div>
 
         {/* Read Blog Button */}
-        <Link to="/blog/1">
+        <Link to={`/blog/${id}`}>
           <button className="w-full bg-blue-600 text-white mt-4 py-2 rounded-3xl hover:bg-blue-700 transition">
             Read Blog
           </button>
