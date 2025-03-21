@@ -13,7 +13,7 @@ function Blog() {
   const [selectedDoctor, setSelectedDoctor] = useState("");
   const [filteredBlog, setFilteredBlog] = useState(blogData);
 
-  // Automatically filter blogs whenever filters change
+// Automatically filter blogs whenever filters change
   useEffect(() => {
     const filtered = blogData.filter(
       (blog) =>
@@ -22,7 +22,7 @@ function Blog() {
         (!selectedDoctor || blog.doctor === selectedDoctor)
     );
     setFilteredBlog(filtered);
-  }, [selectedDepartment, selectedHospital, selectedDoctor]); // Runs when filters change
+  }, [selectedDepartment, selectedHospital, selectedDoctor]); // Runs when rs change
 
   return (
     <>
@@ -46,6 +46,7 @@ function Blog() {
             showCountry={false}
             showCity={false}
             showTreatment={false}
+            showLocation={false}
             showDepartment={true}
             showHospital={true}
             showDoctor={true}

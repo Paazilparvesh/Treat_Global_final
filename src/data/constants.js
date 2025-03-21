@@ -29,6 +29,63 @@ import routesPath from "../routes/routesPath";
 
 export const subHeader = {name: 'Unlock the Magic Life with Treat Global -Your Gateway to Expert Care and Wellness.', link: 'Join As A Partner'}
 
+
+const wellnessData = [
+  {
+    id: 1,
+    title: "4 Day 200HR Breathwork Facilitator Training",
+    rating: 4.96,
+    reviews: 672,
+    country: "USA",
+    price: "₹15,000",
+    discount: "-25%",
+    duration: "2 days 3 nights",
+    persons: "1-2 Person",
+    images: ["/image1233.jpg", "/image1233.jpg", "/image1233.jpg"], // Replace with actual image URLs
+    location : "USA",
+    treatment : "prp"
+  },
+  {
+    id: 2,
+    title: "4 Day 200HR Breathwork Facilitator Training",
+    rating: 4.96,
+    reviews: 672,
+    country: "India",
+    price: "₹15,000",
+    discount: "-25%",
+    duration: "2 days 3 nights",
+    persons: "1-2 Person",
+    images: ["/image1233.jpg", "/image1233.jpg", "/image1233.jpg"], // Replace with actual image URLs
+  },
+  {
+    id: 3,
+    title: "4 Day 200HR Breathwork Facilitator Training",
+    rating: 4.96,
+    reviews: 672,
+    country: "USA",
+    price: "₹15,000",
+    discount: "-25%",
+    duration: "2 days 3 nights",
+    persons: "1-2 Person",
+    images: ["/image1233.jpg", "/image1233.jpg", "/image1233.jpg"], // Replace with actual image URLs
+  },
+  {
+    id: 4,
+    title: "4 Day 200HR Breathwork Facilitator Training",
+    rating: 4.96,
+    reviews: 672,
+    country: "India",
+    price: "₹15,000",
+    discount: "-25%",
+    duration: "2 days 3 nights",
+    persons: "1-2 Person",
+    images: ["/image1233.jpg", "/image1233.jpg", "/image1233.jpg"], // Replace with actual image URLs
+  },
+  // Add more hospital data objects as needed
+];
+export { wellnessData }
+
+
 const hospitalData = [
       {
         id: 1,

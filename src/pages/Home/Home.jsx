@@ -56,7 +56,6 @@ const Home = () => {
       <PopularDoctors/>
       <SuccessStories/>
       <BlogSection/>
-      
     </>
   );
 };
