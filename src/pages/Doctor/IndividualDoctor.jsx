@@ -2,10 +2,10 @@ import React from "react";
 
 import { Button } from "../../components/Button";
 import { Icon } from "@iconify/react";
-import { doctorData } from "../../data/constants";
+import { doctorsData } from "../../data/constants";
 import Appointment from "../../components/Appoiment";
 function IndividualDoctor() {
-  const doctor = doctorData[0];
+  const doctor = doctorsData[0];
 
   return (
     <>

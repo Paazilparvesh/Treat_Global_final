@@ -22,6 +22,7 @@ import implant from '../assets/svg/implant.svg'
 import single_treatment from "../assets/images/single-treatment.webp"
 import dr from "../assets/images/Dr. Hitesh.png";
 import image10 from "/src/assets/images/hospital.webp";
+// import hospital from "/src/assets/images/hospital.webp";
 
 import routesPath from "../routes/routesPath";
 
@@ -35,7 +36,11 @@ const hospitalData = [
         location: "India, Chennai",
         rating: 4.96,
         reviews: 672,
-        image: image10 , 
+        image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram"
+
       },
       {
         id: 2,
@@ -44,6 +49,9 @@ const hospitalData = [
         rating: 4.85,
         reviews: 512,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },
       {
         id: 3,
@@ -52,6 +60,9 @@ const hospitalData = [
         rating: 4.75,
         reviews: 430,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },
       {
         id: 4,
@@ -60,6 +71,9 @@ const hospitalData = [
         rating: 4.80,
         reviews: 390,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },
       {
         id: 5,
@@ -68,6 +82,9 @@ const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },
       {
         id: 6,
@@ -76,6 +93,9 @@ const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },
       {
         id: 7,
@@ -84,6 +104,9 @@ const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },
       {
         id: 8,
@@ -92,6 +115,9 @@ const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },
       {
         id: 9,
@@ -100,6 +126,9 @@ const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },
       {
         id: 10,
@@ -108,6 +137,9 @@ const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
+        treatment: "Oncology",
+        country: "India",
+        city: "Gurugram",
       },  
       {
         id: 11,
@@ -116,6 +148,9 @@ const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
+        treatment: "Oncology",
+        country: "UK",
+        city: "Gurugram",
       },  
       {
         id: 12,
@@ -124,9 +159,12 @@ const hospitalData = [
         rating: 4.70,
         reviews: 350,
         image: image10 ,
+        treatment: "Oncology",
+        country: "USA",
+        city: "Gurugram",
       },
 ];
-export { hospitalData };
+export     { hospitalData };
 
 export const navbar = [
     {name: 'Medical Opinion', path: `${routesPath.MEDICAL_OPINION}`},
@@ -717,7 +755,10 @@ const doctorsData = [
     name: "Dr. Tapan Singh Chauhan",
     field: "Associate Consultant - Gastrointestinal and HPB Oncology '&' Surgical Oncology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 2,
@@ -725,7 +766,10 @@ const doctorsData = [
     name: "Dr. Subodh Chandra Pande",
     field: "Chief - Radiation Oncology & Co-Chief - Cyberknife Centre",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 3,
@@ -733,7 +777,10 @@ const doctorsData = [
     name: "Dr. Mukesh Patekar",
     field: "Unit Head - Medical Oncology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 4,
@@ -741,7 +788,10 @@ const doctorsData = [
     name: "Dr. Parveen Yadav",
     field: "Chief and Sr. Consultant - Robotic & Minimal Invasive Thoracic Oncosurgeon Thoracic Surgery and Surgical Oncology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 5,
@@ -749,7 +799,10 @@ const doctorsData = [
     name: "Dr. Rupinder Sekhon",
     field: "Chairperson - Gynaecological Oncology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 6,
@@ -757,7 +810,10 @@ const doctorsData = [
     name: " Dr. Sanjeev Srivastava",
     field: "Consultant - Neurosurgery",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 7,
@@ -765,7 +821,10 @@ const doctorsData = [
     name: "Dr. Sukri Gupta",
     field: "Consultant, BMT, Hematology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Chennai",
   },
   {
     id: 8,
@@ -773,7 +832,10 @@ const doctorsData = [
     name: " Dr. Gaurav Dixit",
     field: "Unit Head - Haemato -Oncology (Unit II)",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 9,
@@ -781,7 +843,10 @@ const doctorsData = [
     name: "Dr. Shashidhar Shree Niwas",
     field: "Sr. Consultant - Nephrology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 10,
@@ -789,7 +854,10 @@ const doctorsData = [
     name: "Dr. Aditya Gupta",
     field: "Chief - Neurosurgery & CNS Radiosurgery &Co-Chief-Cyberknife Centre",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 11,
@@ -797,7 +865,10 @@ const doctorsData = [
     name: "Dr. Hitesh Garg",
     field: "Head - Ortho Spine Surgery",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
   },
   {
     id: 12,
@@ -805,7 +876,10 @@ const doctorsData = [
     name: "Dr. Priya Tiwari",
     field: "Unit Head - Medical Oncology (Unit II)",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "UK",
+    city: "Gurugram",
   },
   {
     id: 13,
@@ -813,7 +887,10 @@ const doctorsData = [
     name: "Dr. Pawan Goyal",
     field: "Sr. Consultant - Neurosurgery",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "UK",
+    city: "Gurugram",
   },
   {
     id: 14,
@@ -821,7 +898,10 @@ const doctorsData = [
     name: "Dr. Manju Aggarwal",
     field: "Chief - Medical Services & Chairperson - Nephrology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "UK",
+    city: "Gurugram",
   },
   {
     id: 15,
@@ -829,7 +909,10 @@ const doctorsData = [
     name: "Dr. S jayalakshmi",
     field: "Sr. Consultant - Oncology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "UK",
+    city: "Gurugram",
   },
   {
     id: 16,
@@ -837,7 +920,10 @@ const doctorsData = [
     name: "Dr. Deepak Jha",
     field: "Chief, Breast Surgery & Sr. Consultant, Surgical Oncology",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "USA",
+    city: "Gurugram",
   },
   {
     id: 17,
@@ -845,7 +931,10 @@ const doctorsData = [
     name: "Dr. Devendra Yadav",
     field: "Sr. Consultant - Orthopedics (Unit VI)",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "USA",
+    city: "Gurugram",
   },
   {
     id: 18,
@@ -853,14 +942,17 @@ const doctorsData = [
     name: "Dr. Biswajyoti Hazarika",
     field: "Cheif - Head & Neck Surgery",
     experience: 3,
-    hospital: "Artemis Hospital, Gurugram"
+    hospital: "Artemis Hospital, Gurugram",
+    treatment: "Oncology",
+    country: "USA",
+    city: "Gurugram",
   },
   
 ];
-export default doctorsData;
+export { doctorsData }
 
 
-export const doctorData = [
+export const doctorInnerData = [
   {
     name: "Dr. Hitesh Garg",
     imageUrl:dr,
@@ -890,7 +982,7 @@ export const doctorData = [
 ];
 
 
-export const blogData = {
+const blogInnerData = {
   title: "Comprehensive Guide to Medical, Aesthetic, Wellness, Dental, and Transplant Treatments",
   hospital: "Apollo Hospital",
   date: "09-01-2025",
@@ -937,3 +1029,141 @@ export const blogData = {
     },
   ],
 };
+export { blogInnerData }
+
+
+const blogData = [
+  {
+    id: 1,
+    image: image10  ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Neurology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 2,
+    image: image10  ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Neurology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 3,
+    image: image10 ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Neurology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 4,
+    image: image10  ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Neurology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 5,
+    image: image10 ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Neurology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 6,
+    image: image10 ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Neurology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 7,
+    image: image10  ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Physiotherapy",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 8,
+    image: image10  ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Physiotherapy",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 9,
+    image: image10  ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Physiotherapy",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 10,
+    image: image10  ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Cardiology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 11,
+    image: image10  ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Cardiology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+  {
+    id: 12,
+    image: image10 ,
+    date : "13 March 2022",
+    title : "Step-by-Step Guide to a Smooth Joining Process",
+    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags : ["physiotherapy","health and wellness"],
+    department: "Cardiology",
+    hospital: "Apollo Hospital",
+    doctor: "Dr. John Doe"
+  },
+];
+export { blogData }

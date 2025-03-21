@@ -3,7 +3,7 @@ import DoctorCard from "./DoctorCard";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { Button } from "./Button";
-import doctorsData from "../data/constants";
+import { doctorsData } from "../data/constants";
 
 function PopularDoctors() {
   const doctors = doctorsData.slice(4,8); // get first 4 doctors from the array
