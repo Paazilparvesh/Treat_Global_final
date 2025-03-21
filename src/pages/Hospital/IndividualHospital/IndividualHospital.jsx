@@ -68,21 +68,21 @@ const tabData = {
   Infrastructure: {
     title: "Infrastructure",
     sections: [
-      {
-        // heading: "Facilities",
-        content: ["Our hospital's infrastructure is meticulously designed to provide top-tier healthcare services, ensuring patient safety, comfort, and optimal medical outcomes.",
-                  "A hospital's infrastructure includes:",
+      // {
+      //   // heading: "Facilities",
+      //   content: ["Our hospital's infrastructure is meticulously designed to provide top-tier healthcare services, ensuring patient safety, comfort, and optimal medical outcomes.",
+      //             "A hospital's infrastructure includes:",
 
-                  "Medical Facilities:",
-                  "Hospitals, clinics, and specialized centers are equipped to provide patient care at Treat global in India.",
+      //             "Medical Facilities:",
+      //             "Hospitals, clinics, and specialized centers are equipped to provide patient care at Treat global in India.",
 
-                  "Healthcare Workforce:",
-                  "Best Doctors, nurses, and support staff who deliver medical services.",
+      //             "Healthcare Workforce:",
+      //             "Best Doctors, nurses, and support staff who deliver medical services.",
 
-                  "Technology Systems:",
-                  "Top Electronic health records and telemedicine platforms that manage patient information and facilitate remote consultations."
-                 ]
-      },
+      //             "Technology Systems:",
+      //             "Top Electronic health records and telemedicine platforms that manage patient information and facilitate remote consultations."
+      //            ]
+      // },
       {
         heading: "A hospital's infrastructure includes:",
         content: [
