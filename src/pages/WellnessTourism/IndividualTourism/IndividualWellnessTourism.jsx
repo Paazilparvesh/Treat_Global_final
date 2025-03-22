@@ -10,14 +10,9 @@ import InputForm from "../../../components/forms/input";
 import useCustomState from "../../../hooks/useCustomState";
 import Button from "/src/components/buttons.jsx";
 import { IoLogoWhatsapp } from "react-icons/io";
-// import Modal from "../../../components/common/modal";
-// import { headSubHead } from "../../../data/constants";
-// import RelatedTourPack from "../../../components/common/relatedTourPack";
 
 const IndividualPage = () => {
   const [guest, setGuest] = useCustomState("");
-
-  // const [isModalOpen, setModalOpen] = useCustomState(false);
 
   const handleGuestCount = (value) => {
     setGuest(value);
@@ -25,10 +20,6 @@ const IndividualPage = () => {
 
   const { id } = useParams();
   const tourismDetail = trainingDetails.find((item) => item.id === Number(id));
-
-  if (!tourismDetail) return <p>Package Not Found.</p>;
-
-  // const relatedTours = trainingDetails.filter((item) => item.id !== tourismDetail.id && (item.location === tourismDetail.location || item.treatment === tourismDetail.treatment));
 
   return (
     <div className=" mx-15 mr-15">
@@ -73,20 +64,12 @@ const IndividualPage = () => {
                     <Button
                       className="overlayBtn"
                       label="View More"
-                      // onClick={() => setModalOpen(true)}
+                    // onClick={() => setModalOpen(true)}
                     />
                   </div>
                 )}
               </div>
             ))}
-
-            {/* <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
-              <div className="modalImages">
-                {tourismDetail.images.map((image, index) => (
-                  <img key={index} src={image} alt={image} />
-                ))}
-              </div>
-            </Modal> */}
           </div>
         </div>
       </div>
@@ -188,14 +171,6 @@ const IndividualPage = () => {
           non natus!
         </p>
       </div>
-
-        {/* <div className="relatedTourHead">
-          <p className="head">{headSubHead.relatedTourPack.head}</p>
-          <p className="subHead">{headSubHead.relatedTourPack.subHead}</p> */}
-        {/* </div> */}
-      {/* <div className="relatedTourPack">
-        {relatedTours.length > 0 && (<RelatedTourPack relatedTours = {relatedTours} />)}
-      </div> */}
     </div>
   );
 };

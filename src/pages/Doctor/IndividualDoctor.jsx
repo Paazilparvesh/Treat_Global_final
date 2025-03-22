@@ -4,6 +4,8 @@ import { Button } from "../../components/Button";
 import { Icon } from "@iconify/react";
 import { doctorInnerData } from "../../data/constants";
 import Appointment from "../../components/Appoiment";
+
+
 function IndividualDoctor() {
   const doctor = doctorInnerData[0];
 

@@ -12,9 +12,7 @@ import { Link } from "react-router-dom";
 const data = [
   {
     title: "Wellness Card",
-    image: { mayoClinic, hospital }, // First occurrence
-    // image : mayoClinic,  // Second occurrence (Overwrites first)
-    // image : mayoClinic   // Third occurrence (Overwrites second)
+    image: { mayoClinic, hospital }
   },
 ];
 
@@ -24,9 +22,9 @@ const start = [
   },
 ];
 
-function WellnessCard({ title, rating, reviews, country }) {
+function WellnessCard({ title, rating, reviews, country, price, duration, persons }) {
   return (
-    <div class=" bg-white rounded-3xl p-8 mb-3 flex items-center justify-between gap-3">
+    <div className=" bg-white rounded-3xl p-8 mb-3 flex items-center justify-between gap-3">
       <div className="bg-white">
         <h3 className="text-[24px] font-manrope font-extrabold">{title}</h3>
         <div className="flex items-center gap-1">
@@ -95,7 +93,7 @@ function WellnessCard({ title, rating, reviews, country }) {
       >
         <div className="text-[26px] flex items-center gap-1">
           <Icon icon="mdi:currency-inr" width={30} height={30}></Icon>
-          <p className="text-[26px] font-bold">15,000</p>
+          <p className="text-[26px] font-bold">{price}</p>
           <p className="text-[16px]">/ Total</p>
           <h1></h1>
           <div className="absolute top-0 right-6">
@@ -110,23 +108,23 @@ function WellnessCard({ title, rating, reviews, country }) {
         </div>
         <div className="p-3 mt-5 flex gap-1.5 items-center">
           <img src={clock} className="w-[25px] h-[25px]" />
-          <p className="text-[18px]  text-gray-500">2 Days 3 Nights</p>
+          <p className="text-[18px]  text-gray-500">{duration}</p>
         </div>
         <div className="p-3 flex gap-1.5 items-center ">
           <img src={person} />
-          <p className="text-[18px] text-gray-500">1-2 Persons</p>
+          <p className="text-[18px] text-gray-500">{persons}</p>
         </div>
-        <Link to={`${routesPath.WELLNESS_TOURISM_ID.replace(":id", wellnessData.id)}`}>
-        <button
-          className="bg-[#3D77F6] rounded-[50px] mt-40 w-full"
-          style={{
-            padding: "12px 38px 12px 38px",
-            color: "white",
-            fontSize: "24px",
-            fontWeight: "700px",
-          }}
-        >
-          Explore Package
+        <Link to={`${routesPath.WELLNESS_TOURISM_ID.replace(":id", wellnessData[0].id)}`}>
+          <button
+            className="bg-[#3D77F6] rounded-[50px] mt-40 w-full"
+            style={{
+              padding: "12px 38px 12px 38px",
+              color: "white",
+              fontSize: "24px",
+              fontWeight: "700px",
+            }}
+          >
+            Explore Package
           </button>
         </Link>
       </div>

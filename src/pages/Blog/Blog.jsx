@@ -62,13 +62,16 @@ function Blog() {
           Found {filteredBlog.length} Results
         </span>
       </div>
-
+      {/* Blog Grid */}
       <div className="px-4 pb-20 mx-10">
         <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
           {filteredBlog.length > 0 ? (
-            filteredBlog.map((blog) => <BlogCard key={blog.id} {...blog} />)
+            filteredBlog.map((blog) => (
+               <BlogCard key={blog.id} {...blog} />
+              ))
           ) : (
-            <p className="text-gray-500 text-lg col-span-full">No matching blogs found.</p>
+            <p className="text-gray-500 text-lg col-span-full">
+              No matching blogs found.</p>
           )}
         </div>
       </div>

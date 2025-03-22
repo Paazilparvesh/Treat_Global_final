@@ -27,7 +27,7 @@ import image10 from "/src/assets/images/hospital.webp";
 import routesPath from "../routes/routesPath";
 
 
-export const subHeader = {name: 'Unlock the Magic Life with Treat Global -Your Gateway to Expert Care and Wellness.', link: 'Join As A Partner'}
+export const subHeader = { name: 'Unlock the Magic Life with Treat Global -Your Gateway to Expert Care and Wellness.', link: 'Join As A Partner' }
 
 
 const wellnessData = [
@@ -42,16 +42,16 @@ const wellnessData = [
     duration: "2 days 3 nights",
     persons: "1-2 Person",
     images: ["/image1233.jpg", "/image1233.jpg", "/image1233.jpg"], // Replace with actual image URLs
-    location : "USA",
-    treatment : "prp"
+    location: "USA",
+    treatment: "prp"
   },
   {
     id: 2,
-    title: "4 Day 200HR Breathwork Facilitator Training",
+    title: "3 Day 200HR Breathwork Facilitator Training",
     rating: 4.96,
     reviews: 672,
     country: "India",
-    price: "₹15,000",
+    price: "₹45,000",
     discount: "-25%",
     duration: "2 days 3 nights",
     persons: "1-2 Person",
@@ -59,11 +59,11 @@ const wellnessData = [
   },
   {
     id: 3,
-    title: "4 Day 200HR Breathwork Facilitator Training",
+    title: "2 Day 200HR Breathwork Facilitator Training",
     rating: 4.96,
     reviews: 672,
     country: "USA",
-    price: "₹15,000",
+    price: "₹30,000",
     discount: "-25%",
     duration: "2 days 3 nights",
     persons: "1-2 Person",
@@ -71,13 +71,13 @@ const wellnessData = [
   },
   {
     id: 4,
-    title: "4 Day 200HR Breathwork Facilitator Training",
+    title: "1 Day 200HR Breathwork Facilitator Training",
     rating: 4.96,
     reviews: 672,
     country: "India",
-    price: "₹15,000",
+    price: "₹20,000",
     discount: "-25%",
-    duration: "2 days 3 nights",
+    duration: "9 days 10 nights",
     persons: "1-2 Person",
     images: ["/image1233.jpg", "/image1233.jpg", "/image1233.jpg"], // Replace with actual image URLs
   },
@@ -87,161 +87,161 @@ export { wellnessData }
 
 
 const hospitalData = [
-      {
-        id: 1,
-        name: "Apollo Hospitals",
-        location: "India, Chennai",
-        rating: 4.96,
-        reviews: 672,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram"
+  {
+    id: 1,
+    name: "Apollo Hospitals",
+    location: "India, Chennai",
+    rating: 4.96,
+    reviews: 672,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram"
 
-      },
-      {
-        id: 2,
-        name: "Fortis Hospital",
-        location: "India, Mumbai",
-        rating: 4.85,
-        reviews: 512,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },
-      {
-        id: 3,
-        name: "Max Healthcare",
-        location: "India, Delhi",
-        rating: 4.75,
-        reviews: 430,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },
-      {
-        id: 4,
-        name: "Medanta Hospital",
-        location: "India, Gurgaon",
-        rating: 4.80,
-        reviews: 390,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },
-      {
-        id: 5,
-        name: "Manipal Hospital",
-        location: "India, Bangalore",
-        rating: 4.70,
-        reviews: 350,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },
-      {
-        id: 6,
-        name: "Manipal Hospital",
-        location: "India, Bangalore",
-        rating: 4.70,
-        reviews: 350,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },
-      {
-        id: 7,
-        name: "Manipal Hospital",
-        location: "India, Bangalore",
-        rating: 4.70,
-        reviews: 350,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },
-      {
-        id: 8,
-        name: "Manipal Hospital",
-        location: "India, Bangalore",
-        rating: 4.70,
-        reviews: 350,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },
-      {
-        id: 9,
-        name: "Manipal Hospital",
-        location: "India, Bangalore",
-        rating: 4.70,
-        reviews: 350,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },
-      {
-        id: 10,
-        name: "Manipal Hospital",
-        location: "India, Bangalore",
-        rating: 4.70,
-        reviews: 350,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "India",
-        city: "Gurugram",
-      },  
-      {
-        id: 11,
-        name: "Manipal Hospital",
-        location: "India, Bangalore",
-        rating: 4.70,
-        reviews: 350,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "UK",
-        city: "Gurugram",
-      },  
-      {
-        id: 12,
-        name: "Manipal Hospital",
-        location: "India, Bangalore",
-        rating: 4.70,
-        reviews: 350,
-        image: image10 ,
-        treatment: "Oncology",
-        country: "USA",
-        city: "Gurugram",
-      },
+  },
+  {
+    id: 2,
+    name: "Fortis Hospital",
+    location: "India, Mumbai",
+    rating: 4.85,
+    reviews: 512,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 3,
+    name: "Max Healthcare",
+    location: "India, Delhi",
+    rating: 4.75,
+    reviews: 430,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 4,
+    name: "Medanta Hospital",
+    location: "India, Gurgaon",
+    rating: 4.80,
+    reviews: 390,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 5,
+    name: "Manipal Hospital",
+    location: "India, Bangalore",
+    rating: 4.70,
+    reviews: 350,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 6,
+    name: "Manipal Hospital",
+    location: "India, Bangalore",
+    rating: 4.70,
+    reviews: 350,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 7,
+    name: "Manipal Hospital",
+    location: "India, Bangalore",
+    rating: 4.70,
+    reviews: 350,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 8,
+    name: "Manipal Hospital",
+    location: "India, Bangalore",
+    rating: 4.70,
+    reviews: 350,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 9,
+    name: "Manipal Hospital",
+    location: "India, Bangalore",
+    rating: 4.70,
+    reviews: 350,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 10,
+    name: "Manipal Hospital",
+    location: "India, Bangalore",
+    rating: 4.70,
+    reviews: 350,
+    image: image10,
+    treatment: "Oncology",
+    country: "India",
+    city: "Gurugram",
+  },
+  {
+    id: 11,
+    name: "Manipal Hospital",
+    location: "India, Bangalore",
+    rating: 4.70,
+    reviews: 350,
+    image: image10,
+    treatment: "Oncology",
+    country: "UK",
+    city: "Gurugram",
+  },
+  {
+    id: 12,
+    name: "Manipal Hospital",
+    location: "India, Bangalore",
+    rating: 4.70,
+    reviews: 350,
+    image: image10,
+    treatment: "Oncology",
+    country: "USA",
+    city: "Gurugram",
+  },
 ];
 export { hospitalData };
 
 
 
 export const navbar = [
-    {name: 'Medical Opinion', path: `${routesPath.MEDICAL_OPINION}`},
-    {name: 'Treatments', path: `${routesPath.TREATMENTS}`},
-    // {name: 'Transplant', path: `${routesPath.TRANSPLANT}`},
-    {name: 'Wellness Tourism', path: `${routesPath.WELLNESS_TOURISM}`},
-    {name: 'Hospitals', path: `${routesPath.HOSPITALS}`},
-    {name: 'Doctors', path: `${routesPath.DOCTORS}`},
-    {name: 'Blogs', path: `${routesPath.blog}`},
+  { name: 'Medical Opinion', path: `${routesPath.MEDICAL_OPINION}` },
+  { name: 'Treatments', path: `${routesPath.TREATMENTS}` },
+  // {name: 'Transplant', path: `${routesPath.TRANSPLANT}`},
+  { name: 'Wellness Tourism', path: `${routesPath.WELLNESS_TOURISM}` },
+  { name: 'Hospitals', path: `${routesPath.HOSPITALS}` },
+  { name: 'Doctors', path: `${routesPath.DOCTORS}` },
+  { name: 'Blogs', path: `${routesPath.blog}` },
 ];
 
 
 
 export const lang = [
-    { value: "EN", label: "English" },
-    { value: "FR", label: "Français" },
-    { value: "ES", label: "Español" },
-    { value: "DE", label: "Deutsch" },
+  { value: "EN", label: "English" },
+  { value: "FR", label: "Français" },
+  { value: "ES", label: "Español" },
+  { value: "DE", label: "Deutsch" },
 ];
 
 
@@ -297,262 +297,267 @@ export const footerContents = {
 
 export const homeTreatments = [
   {
-   image:blueTreat,
-    title:'Medical Treatments',
-    des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-    btnLink:'Know More',
-    bgColor:'#ECF2FF'
+    image: blueTreat,
+    title: 'Medical Treatments',
+    des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+    btnLink: 'Know More',
+    bgColor: '#ECF2FF'
   },
   {
-     image:greenTreat,
-    title:'Aesthetic Treatments',
-    des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-    btnLink:'Know More',
-     bgColor:'#E4FFEA'
+    image: greenTreat,
+    title: 'Aesthetic Treatments',
+    des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+    btnLink: 'Know More',
+    bgColor: '#E4FFEA'
   },
   {
-    image:skyTreat,
-    title:'Dental Treatments',
-    des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-    btnLink:'Know More',
-     bgColor:'#E0F7FF'
+    image: skyTreat,
+    title: 'Dental Treatments',
+    des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+    btnLink: 'Know More',
+    bgColor: '#E0F7FF'
   },
   {
-    image:darkTreat,
-    title:'Transplant Treatments',
-    des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-    btnLink:'Know More',
-    bgColor:'#EDF2FB'
+    image: darkTreat,
+    title: 'Transplant Treatments',
+    des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+    btnLink: 'Know More',
+    bgColor: '#EDF2FB'
   },
 ]
 
 export const treatment = [
-  {heading:"Medical Treatments" , data:[
-    {
-     image:allergy,
-      title:'Allergy & Immunology',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#ECF2FF'
+  {
+    heading: "Medical Treatments", data: [
+      {
+        image: allergy,
+        title: 'Allergy & Immunology',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#ECF2FF'
+      },
+      {
+        image: Anesthesiology,
+        title: 'Anesthesiology',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#E4FFEA'
+      },
+      {
+        image: bariatric,
+        title: 'Bariatric Surgery',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#E0F7FF'
+      },
+      {
+        image: cardiac,
+        title: 'Cardiac Surgery',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#EDF2FB'
+      },
+      {
+        image: cardiology,
+        title: 'Cardiology',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#ECF2FF'
+      },
+      {
+        image: cosmetic,
+        title: 'Cosmetic & Plastic ',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#E4FFEA'
+      },
+      {
+        image: critical,
+        title: 'Critical Care Medicine',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#E0F7FF'
+      },
+      {
+        image: dentistry,
+        title: 'Dentistry',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#EDF2FB'
+      },
+      {
+        image: ear,
+        title: 'Ear, Nose, & Throat',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#ECF2FF'
+      },
+      {
+        image: gastroenterology,
+        title: 'Gastroenterology',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#E4FFEA'
+      },
+      {
+        image: infertility,
+        title: 'Infertility & IVF ',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#E0F7FF'
+      },
+      {
+        image: pulmonology,
+        title: 'Pulmonology',
+        des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+        btnLink: 'Know More',
+        bgColor: '#EDF2FB'
+      },
+    ]
+  },
+  {
+    heading: "Aesthetic Treatments",
+    data: [{
+      image: dental,
+      title: 'Dental',
+      des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+      btnLink: 'Know More',
+      bgColor: '#ECF2FF'
     },
     {
-       image:Anesthesiology,
-      title:'Anesthesiology',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-       bgColor:'#E4FFEA'
+      image: hair,
+      title: 'Hair Transplant',
+      des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+      btnLink: 'Know More',
+      bgColor: '#E4FFEA'
     },
     {
-      image:bariatric,
-      title:'Bariatric Surgery',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-       bgColor:'#E0F7FF'
+      image: plastic,
+      title: 'Plastic & Aesthetic',
+      des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+      btnLink: 'Know More',
+      bgColor: '#E0F7FF'
     },
-    {
-      image:cardiac,
-      title:'Cardiac Surgery',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#EDF2FB'
-    },
-    {
-      image:cardiology,
-      title:'Cardiology',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#ECF2FF'
-    },
-    {
-      image:cosmetic,
-      title:'Cosmetic & Plastic ',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#E4FFEA'
-    },
-    {
-      image:critical,
-      title:'Critical Care Medicine',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#E0F7FF'
-    },
-    {
-      image:dentistry,
-      title:'Dentistry',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#EDF2FB'
-    },
-    {
-      image:ear,
-      title:'Ear, Nose, & Throat',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#ECF2FF'
-    },
-    {
-      image:gastroenterology,
-      title:'Gastroenterology',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#E4FFEA'
-    },
-    {
-      image:infertility,
-      title:'Infertility & IVF ',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#E0F7FF'
-    },
-    {
-      image:pulmonology,
-      title:'Pulmonology',
-      des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-      btnLink:'Know More',
-      bgColor:'#EDF2FB'
-    },
-  ]},
-  {heading:"Aesthetic Treatments",
-    data:[  {
-      image:dental,
-       title:'Dental',
-       des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-       btnLink:'Know More',
-       bgColor:'#ECF2FF'
-     },
-     {
-        image:hair,
-       title:'Hair Transplant',
-       des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-       btnLink:'Know More',
-        bgColor:'#E4FFEA'
-     },
-     {
-       image:plastic,
-       title:'Plastic & Aesthetic',
-       des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-       btnLink:'Know More',
-        bgColor:'#E0F7FF'
-     },
-     ]
+    ]
   },
 
-  {heading:"Dental Treatments",
-    data:[  {
-      image:root,
-       title:'Root Canal ',
-       des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-       btnLink:'Know More',
-       bgColor:'#ECF2FF'
-     },
-     {
-        image:implant,
-       title:'Dental Implant',
-       des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-       btnLink:'Know More',
-        bgColor:'#E4FFEA'
-     },
-     ]
-  },  {heading:"Transplant Treatments",
-    data:[ {
-      image:allergy,
-       title:'Allergy & Immunology',
-       des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-       btnLink:'Know More',
-       bgColor:'#ECF2FF'
-     },
-     {
-        image:Anesthesiology,
-       title:'Anesthesiology',
-       des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-       btnLink:'Know More',
-        bgColor:'#E4FFEA'
-     },
-     {
-       image:bariatric,
-       title:'Bariatric Surgery',
-       des:'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
-       btnLink:'Know More',
-        bgColor:'#E0F7FF'
-     },
-     ]
+  {
+    heading: "Dental Treatments",
+    data: [{
+      image: root,
+      title: 'Root Canal ',
+      des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+      btnLink: 'Know More',
+      bgColor: '#ECF2FF'
+    },
+    {
+      image: implant,
+      title: 'Dental Implant',
+      des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+      btnLink: 'Know More',
+      bgColor: '#E4FFEA'
+    },
+    ]
+  }, {
+    heading: "Transplant Treatments",
+    data: [{
+      image: allergy,
+      title: 'Allergy & Immunology',
+      des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+      btnLink: 'Know More',
+      bgColor: '#ECF2FF'
+    },
+    {
+      image: Anesthesiology,
+      title: 'Anesthesiology',
+      des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+      btnLink: 'Know More',
+      bgColor: '#E4FFEA'
+    },
+    {
+      image: bariatric,
+      title: 'Bariatric Surgery',
+      des: 'Explore advanced, expert-led medical treatments tailored to your health needs, ensuring quality care and effective results.',
+      btnLink: 'Know More',
+      bgColor: '#E0F7FF'
+    },
+    ]
   },
 ]
 export const headSubHead = {
-  relatedTourPack : {head: 'Related', subHead: 'Tour Pack'},
+  relatedTourPack: { head: 'Related', subHead: 'Tour Pack' },
 }
 
 export const homeWhyChooseUS = [
   {
-    title:'24/7 Support: Always There for You  ',
-    des:'Your health matters anytime—our support team is here for you, day and night. '
+    title: '24/7 Support: Always There for You  ',
+    des: 'Your health matters anytime—our support team is here for you, day and night. '
   },
   {
-    title:'Join a Network of 500+ Top Hospitals ',
-    des:'Access world-class care with our extensive network of top-tier hospitals. '
+    title: 'Join a Network of 500+ Top Hospitals ',
+    des: 'Access world-class care with our extensive network of top-tier hospitals. '
   },
   {
-    title:'Visa Assistance ',
-    des:'Travel trouble-free with our expert visa support for medical needs. '
+    title: 'Visa Assistance ',
+    des: 'Travel trouble-free with our expert visa support for medical needs. '
   },
   {
-    title:'Experience Care from Expert Doctors ',
-    des:'Get advice from the best doctors in the field—experienced, certified, and trusted. '
+    title: 'Experience Care from Expert Doctors ',
+    des: 'Get advice from the best doctors in the field—experienced, certified, and trusted. '
   },
 
 ]
 export const joinUsData = [
   {
-    title:'Register   ',
-    des:'Sign up and create your account by providing the necessary details. Get started on your journey with ease. '
+    title: 'Register   ',
+    des: 'Sign up and create your account by providing the necessary details. Get started on your journey with ease. '
   },
   {
-    title:'Refer ',
-    des:'Share your unique referral link with friends and contacts. The more you refer, the more you earn. '
+    title: 'Refer ',
+    des: 'Share your unique referral link with friends and contacts. The more you refer, the more you earn. '
   },
   {
-    title:'Get Updated ',
-    des:' Stay informed about your referral status and approvals. Receive timely notifications on your progress. '
+    title: 'Get Updated ',
+    des: ' Stay informed about your referral status and approvals. Receive timely notifications on your progress. '
   },
   {
-    title:'Payout ',
-    des:'nce approved, receive your earnings securely. Enjoy hassle-free withdrawals to your preferred payment method.'
+    title: 'Payout ',
+    des: 'nce approved, receive your earnings securely. Enjoy hassle-free withdrawals to your preferred payment method.'
   },
 
 ]
 export const contactUsData = [
   {
-    title:'Phone Number',
-    des:'+1-888-296-6664'
+    title: 'Phone Number',
+    des: '+1-888-296-6664'
   },
   {
-    title:'Mail ID ',
-    des:'info@treatglobal.com '
+    title: 'Mail ID ',
+    des: 'info@treatglobal.com '
   },
   {
-    title:'Location',
-    des:' Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  '
+    title: 'Location',
+    des: ' Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  '
   },
 
 
 ]
 export const medicalsData = [
   {
-    title:'Assessment:',
-    des:'Begin with a personalized health assessment evaluation to identify specific needs and goals.'
+    title: 'Assessment:',
+    des: 'Begin with a personalized health assessment evaluation to identify specific needs and goals.'
   },
   {
-    title:'Planning:',
-    des:'Develop tailored strategies, including diet, exercise and fitness, stress management, and preventive care strategies.'
+    title: 'Planning:',
+    des: 'Develop tailored strategies, including diet, exercise and fitness, stress management, and preventive care strategies.'
   },
   {
-    title:'Implementation:',
-    des:'Engage in structured programs, therapies, or activities designed to enhance overall well-being.'
+    title: 'Implementation:',
+    des: 'Engage in structured programs, therapies, or activities designed to enhance overall well-being.'
   },
   {
-    title:'Monitoring & Support:',
-    des:'Regular check-ins and professional guidance ensure sustainable progress and long-term benefits.'
+    title: 'Monitoring & Support:',
+    des: 'Regular check-ins and professional guidance ensure sustainable progress and long-term benefits.'
   },
 
 ]
@@ -728,67 +733,6 @@ export const faqs = {
 };
 
 
-// export const  faqs = [
-//   {
-//     question: "Are medical opinions available 24/7?",
-//     answer:
-//       "A second opinion provides clarity, confirms a diagnosis, and helps you make informed decisions about your treatment plan. It can also offer alternative approaches to care for or validate your current course of action.",
-//   },
-//   {
-//     question: "What is the expected response time for opinions?",
-//     answer: "The expected response time is within 24 hours.",
-//   },
-//   {
-//     question: "What kind of cases are eligible for medical opinions?",
-//     answer: "Most medical cases are eligible for opinions.",
-//   },
-//   {
-//     question: "Is there a fee for medical opinions?",
-//     answer: "Fees may vary based on the complexity of the case.",
-//   },
-//   {
-//     question: "Can I select the specialist for my case?",
-//     answer: "Yes, you can select from a list of available specialists.",
-//   },
-//   {
-//     question: "How accurate are the provided medical opinions?",
-//     answer: "Our experts provide highly accurate opinions.",
-//   },
-//   {
-//     question: "Is there a follow-up option after receiving the opinion?",
-//     answer: "Yes, follow-ups are available.",
-//   },
-//   {
-//     question: "How are opinions delivered (email, portal, etc.)?",
-//     answer: "Opinions are delivered via email and portal.",
-//   },
-//   {
-//     question: "Can I cancel a medical opinion request?",
-//     answer: "Yes, you can cancel before the opinion is processed.",
-//   },
-//   {
-//     question: "Are the doctors providing opinions board-certified?",
-//     answer: "Yes, all doctors are board-certified.",
-//   },
-//   {
-//     question: "Do I need to provide a medical history?",
-//     answer: "Yes, providing medical history helps improve accuracy.",
-//   },
-//   {
-//     question: "Is there a translation option for reports?",
-//     answer: "Yes, translation is available upon request.",
-//   },
-//   {
-//     question: "Can opinions help me decide on surgery?",
-//     answer: "Yes, opinions can provide valuable insights for surgery.",
-//   },
-//   {
-//     question: "Is telemedicine available for consultation?",
-//     answer: "Yes, telemedicine is available for consultation.",
-//   },
-// ];
-
-
 export const singleTreatment = {
   heading: "Transforming Lives with Appendix Surgery : ",
   review: "4.96 (672 reviews & 90% value satisfaction rating)",
@@ -807,7 +751,7 @@ export const singleTreatment = {
     content: `The heart has four valves to keep the blood flow in the right direction. These are the mitral valve, tricuspid valve, pulmonary valve, and aortic valve. Each valve closes and opens during every heartbeat.
 The process of replacing the natural diseased and damaged heart valve with a prosthetic valve to mimic the exact functioning of the valve is known as heart valve replacement. A prosthetic valve is designed to aid normal opening and closing motion, exactly like the natural valve. The cause of damage can be a result of calcium build up in the valve due to aging or other factors. Mostly, open-heart surgery is the option for heart valve replacement.`
   },
-  image:single_treatment
+  image: single_treatment
 };
 
 
@@ -1010,35 +954,36 @@ const doctorsData = [
     country: "USA",
     city: "Gurugram",
   },
-  
+
 ];
 export { doctorsData }
 
 
 const doctorInnerData = [
   {
+    id: 1,
     name: "Dr. Hitesh Garg",
-    imageUrl:dr,
+    imageUrl: dr,
     position: "Head Ortho Spine Surgery",
-    consultantAt: "Head Ortho Spine Surgery",
+    consultant: "Head Ortho Spine Surgery",
     about: "An internationally famous and innovative laparoscopic surgeon is Dr. Pradeep Chowbey. He has taught more than 20,000 doctors from all over the world in minimally invasive procedures and has over 45 years of surgical expertise. He was one of the first surgeons in North India to conduct a laparoscopic cholecystectomy, as well as the first in the Asia Pacific to use MAFT (Minimally Invasive Fistula Technology). He has charted his professional path with the primary goal of advancing minimal access, metabolic, and bariatric surgery throughout India and the Asian region.",
     surgeries: "500+",
     experience: "3 Years",
     qualifications: [
-      "FMAS", "FALS", "FIAGES", "FACS", "FICS", 
-      "FAIS", "FIMSA", "FRCS (London)", "MNAMS", 
+      "FMAS", "FALS", "FIAGES", "FACS", "FICS",
+      "FAIS", "FIMSA", "FRCS (London)", "MNAMS",
       "MBBS, MS (Jabalpur Medical College)"
     ],
     specialties: [
-      "Laparoscopic / Minimal Access Surgery", 
-      "Bariatric Surgery / Metabolic", 
-      "Laparoscopic Surgeon", 
+      "Laparoscopic / Minimal Access Surgery",
+      "Bariatric Surgery / Metabolic",
+      "Laparoscopic Surgeon",
       "Endoscopic & Bariatric Surgery"
     ],
     interests: [
-      "Obesity Surgery", "Appendix", "Gallbladder Stones", 
-      "Scarless Neck Surgery", "Thyroid & Parathyroid", 
-      "Piles, Fissure, Anal Fistula", "Hernia", 
+      "Obesity Surgery", "Appendix", "Gallbladder Stones",
+      "Scarless Neck Surgery", "Thyroid & Parathyroid",
+      "Piles, Fissure, Anal Fistula", "Hernia",
       "Endoscopic Surgery"
     ]
   }
@@ -1099,132 +1044,132 @@ export { blogInnerData }
 const blogData = [
   {
     id: 1,
-    image: image10  ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Neurology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 2,
-    image: image10  ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Neurology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 3,
-    image: image10 ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Neurology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 4,
-    image: image10  ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Neurology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 5,
-    image: image10 ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Neurology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 6,
-    image: image10 ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Neurology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 7,
-    image: image10  ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Physiotherapy",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 8,
-    image: image10  ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Physiotherapy",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 9,
-    image: image10  ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Physiotherapy",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 10,
-    image: image10  ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Cardiology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 11,
-    image: image10  ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Cardiology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"
   },
   {
     id: 12,
-    image: image10 ,
-    date : "13 March 2022",
-    title : "Step-by-Step Guide to a Smooth Joining Process",
-    description : "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
-    tags : ["physiotherapy","health and wellness"],
+    image: image10,
+    date: "13 March 2022",
+    title: "Step-by-Step Guide to a Smooth Joining Process",
+    description: "New to the platform? Follow this easy guide to register, refer, track updates, and receive...",
+    tags: ["physiotherapy", "health and wellness"],
     department: "Cardiology",
     hospital: "Apollo Hospital",
     doctor: "Dr. John Doe"

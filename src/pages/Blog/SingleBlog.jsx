@@ -4,6 +4,8 @@ import { ReusableHero } from "../../components/ReusableHero";
 import { blogInnerData, faqs } from "../../data/constants";
 import Appointment from "../../components/Appoiment";
 import FAQ from "../../components/Faq";
+
+
 function SingleBlog() {
   return (
     <>

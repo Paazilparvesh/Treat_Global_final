@@ -149,7 +149,7 @@
 //           </h1>
 //           <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">Easily locate the best hospitals near you with our smart search and recommendations.
 //           </p>
-    
+
 //           <SearchBar
 //               setSelectedLocation={setSelectedLocation}
 //               setSelectedTreatment={setSelectedTreatment}
@@ -161,7 +161,7 @@
 //               showHospital={false}
 //               showDoctor={false}
 //           />
-      
+
 //         </div>
 //       </ReusableHero>
 
@@ -169,18 +169,18 @@
 //       <div className="lowerSection w-full mx-15">
 //         <div className="lowerFilter">
 //           {/* Maps Container */}
-          // <div className="mapsContainer">
-          //   <iframe
-          //     src="https://www.google.com/maps/embed?..."
-          //     width=""
-          //     height="233"
-          //     className="map"
-          //     allowFullScreen=""
-          //     loading="lazy"
-          //     referrerPolicy="no-referrer-when-downgrade"
-          //     title="Wellness Tourism"
-          //   ></iframe>
-          // </div>
+// <div className="mapsContainer">
+//   <iframe
+//     src="https://www.google.com/maps/embed?..."
+//     width=""
+//     height="233"
+//     className="map"
+//     allowFullScreen=""
+//     loading="lazy"
+//     referrerPolicy="no-referrer-when-downgrade"
+//     title="Wellness Tourism"
+//   ></iframe>
+// </div>
 //           {/* Price & Filter Section */}
 //           <div className="priceFilter">
 //             <Collapse ghost expandIcon={() => null} items={filterItems} />
@@ -439,20 +439,14 @@
 import image02 from "/src/assets/images/medical.webp";
 import React, { useState, useEffect } from "react";
 import { Pagination } from "antd";
-import { MdOutlineAccessTimeFilled } from "react-icons/md";
-import { BsPersonFill } from "react-icons/bs";
+// import { MdOutlineAccessTimeFilled } from "react-icons/md";
+// import { BsPersonFill } from "react-icons/bs";
 import { ReusableHero } from "../../components/ReusableHero";
 import { wellnessData } from "../../data/constants";
 import SearchBar from "/src/components/SearchBar.jsx";
 import BlogSection from "/src/components/ReusableBlog.jsx";
 import WellnessCard from "../../components/wellnessCardComp/wellnessCard";
 
-// const wellnessData = [
-//   { id: 1, title: "Luxury Spa", location: "Bali", treatment: "Massage", duration: "2 hours", price: "$120", people: "1 Person", rating: 4.5 },
-//   { id: 2, title: "Detox Retreat", location: "Thailand", treatment: "Detox", duration: "5 days", price: "$800", people: "1 Person", rating: 4.8 },
-//   { id: 3, title: "Yoga Retreat", location: "India", treatment: "Yoga", duration: "7 days", price: "$600", people: "1 Person", rating: 4.6 },
-//   { id: 4, title: "Ayurveda Therapy", location: "India", treatment: "Ayurveda", duration: "3 days", price: "$400", people: "1 Person", rating: 4.7 },
-// ];
 
 const WellnessPage = () => {
   const [selectedCountry, setSelectedCountry] = useState("");
@@ -476,31 +470,31 @@ const WellnessPage = () => {
 
   return (
     <div className=" bg-[#f9fafe] px-6 md:px-10 lg:px-16 py-8">
-      
+
       <ReusableHero heroImage={image02} className="h-[550px]">
-         <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
-           <div className="mx-8 font-manrope text-sm  md:text-lg flex  items-center gap-4">Home 
-             <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
-             <span> Hospitals</span>
-           </div>
-           <h1 className=" w-200 px-8 leading-14 lg:text-5xl font-semibold text-xl font-figtree md:text-2xl">Transformative wellness tourism with treat global 
-           </h1>
-           <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">Easily locate the best hospitals near you with our smart search and recommendations.
-           </p>
-    
-           <SearchBar
-               setSelectedCountry={setSelectedCountry}
-               setSelectedTreatment={setSelectedTreatment}
-               showCountry={true}
-               showCity={false}
-               showTreatment={true}
-               showLocation={false}
-               showDepartment={false}
-               showHospital={false}
-               showDoctor={false}
-           />
-      
-         </div>
+        <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
+          <div className="mx-8 font-manrope text-sm  md:text-lg flex  items-center gap-4">Home
+            <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
+            <span> Hospitals</span>
+          </div>
+          <h1 className=" w-200 px-8 leading-14 lg:text-5xl font-semibold text-xl font-figtree md:text-2xl">Transformative wellness tourism with treat global
+          </h1>
+          <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">Easily locate the best hospitals near you with our smart search and recommendations.
+          </p>
+
+          <SearchBar
+            setSelectedCountry={setSelectedCountry}
+            setSelectedTreatment={setSelectedTreatment}
+            showCountry={true}
+            showCity={false}
+            showTreatment={true}
+            showLocation={false}
+            showDepartment={false}
+            showHospital={false}
+            showDoctor={false}
+          />
+
+        </div>
       </ReusableHero>
 
       {/* Lower Section */}
@@ -548,7 +542,7 @@ const WellnessPage = () => {
           {paginatedData.length > 0 ? (
             paginatedData.map((wellness) => (
               <div className="bg-white rounded-4xl p-">
-              <WellnessCard key={wellness.id} {...wellness} />
+                <WellnessCard key={wellness.id} {...wellness} />
               </div>
             ))
           ) : (
@@ -566,20 +560,8 @@ const WellnessPage = () => {
         </div>
       </div>
 
-      {/* Map Section
-      <div className="mt-8 bg-white p-6 shadow rounded-lg">
-        <h2 className="text-lg font-bold mb-3">Map View</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?..."
-          className="w-full h-[233px] border rounded-lg"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Wellness Tourism"
-        />
-      </div> */}
-      <BlogSection/>
-      {/* <WellnessCard/> */}
+      <BlogSection />
+
     </div>
   );
 };
