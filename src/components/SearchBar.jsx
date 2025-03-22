@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { Button } from "./Button";
@@ -29,16 +28,19 @@ const SearchBar = ({
   const [doctor, setDoctor] = useState("");
 
   return (
-    <div 
-    id="search"
-    className="bg-white shadow-md rounded-2xl mt-5 p-4 w-full max-w-8xl mx-auto">
-      <div className="flex flex-col lg:flex-row items-center border border-gray-300 rounded-lg p-4 text-left gap-4">
-        
+    <div
+      id="search"
+      className="bg-white shadow-md rounded-2xl mt-5 p-4 w-410 max-w-8xl h-45 mx-6"
+    >
+      <div className="flex flex-col justify-between m-5 lg:flex-row items-center border border-gray-300 rounded-lg p-4 text-left gap-4">
         {showCountry && (
-          <div className="w-full lg:w-[25%]">
+          <div className="w-full lg:w-[20%]">
             <span className="text-gray-500 font-manrope text-sm">Country</span>
             <div className="flex items-center rounded-lg p-3 mt-1">
-              <Icon icon="mdi:map-marker-outline" className="text-gray-400 text-xl" />
+              <Icon
+                icon="mdi:map-marker-outline"
+                className="text-gray-400 text-xl"
+              />
               <select
                 value={country}
                 onChange={(e) => setCountry(e.target.value)}
@@ -57,7 +59,10 @@ const SearchBar = ({
           <div className="w-full lg:w-[25%]">
             <span className="text-gray-500 font-manrope text-sm">Location</span>
             <div className="flex items-center rounded-lg p-3 mt-1">
-              <Icon icon="mdi:map-marker-outline" className="text-gray-400 text-xl" />
+              <Icon
+                icon="mdi:map-marker-outline"
+                className="text-gray-400 text-xl"
+              />
               <select
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
@@ -93,7 +98,9 @@ const SearchBar = ({
 
         {showTreatment && (
           <div className="w-full lg:w-[25%]">
-            <span className="text-gray-500 font-manrope text-sm">Treatment</span>
+            <span className="text-gray-500 font-manrope text-sm">
+              Treatment
+            </span>
             <div className="flex items-center p-3 mt-1">
               <Icon icon="mdi:medical-bag" className="text-gray-400 text-xl" />
               <select
@@ -111,9 +118,14 @@ const SearchBar = ({
 
         {showDepartment && (
           <div className="w-full lg:w-[25%]">
-            <span className="text-gray-500 font-manrope text-sm">Department</span>
+            <span className="text-gray-500 font-manrope text-sm">
+              Department
+            </span>
             <div className="flex items-center p-3 mt-1">
-              <Icon icon="mdi:hospital-building" className="text-gray-400 text-xl" />
+              <Icon
+                icon="mdi:hospital-building"
+                className="text-gray-400 text-xl"
+              />
               <select
                 value={department}
                 onChange={(e) => setDepartment(e.target.value)}
@@ -162,23 +174,27 @@ const SearchBar = ({
             </div>
           </div>
         )}
+        <div className="flex mx-10 gap-5">
+          <Button
+            name="Search"
+            startIcon={<Icon icon="mdi:magnify" className="text-4xl" />}
+            onClick={() => {
+              setSelectedCountry && setSelectedCountry(country);
+              setSelectedCity && setSelectedCity(city);
+              setSelectedLocation && setSelectedLocation(location);
+              setSelectedTreatment && setSelectedTreatment(treatment);
+              setSelectedDepartment && setSelectedDepartment(department);
+              setSelectedHospital && setSelectedHospital(hospital);
+              setSelectedDoctor && setSelectedDoctor(doctor);
+              onSearch();
+            }}
+          />
 
-        <Button
-          name="Search"
-          startIcon={<Icon icon="mdi:magnify" className="text-xl" />}
-          onClick={() => {
-            setSelectedCountry && setSelectedCountry(country);
-            setSelectedCity && setSelectedCity(city);
-            setSelectedLocation && setSelectedLocation(location);
-            setSelectedTreatment && setSelectedTreatment(treatment);
-            setSelectedDepartment && setSelectedDepartment(department);
-            setSelectedHospital && setSelectedHospital(hospital);
-            setSelectedDoctor && setSelectedDoctor(doctor);
-            onSearch();
-          }}
-        />
-
-        <Button name="Chat Support" className="text-2xl" startIcon={<Icon icon="mdi:whatsapp" />} />
+          <Button
+            name="Chat Support"
+            startIcon={<Icon icon="mdi:whatsapp" className="text-4xl" />}
+          />
+        </div>
       </div>
     </div>
   );

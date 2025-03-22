@@ -455,7 +455,7 @@ import WellnessCard from "../../components/wellnessCardComp/wellnessCard";
 // ];
 
 const WellnessPage = () => {
-  const [selectedLocation, setSelectedLocation] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedTreatment, setSelectedTreatment] = useState("");
   const [filteredWellness, setFilteredWellness] = useState(wellnessData);
   const [currentPage, setCurrentPage] = useState(1);
@@ -464,18 +464,18 @@ const WellnessPage = () => {
   useEffect(() => {
     const filtered = wellnessData.filter(
       (wellness) =>
-        (!selectedLocation || wellness.location === selectedLocation) &&
+        (!selectedCountry || wellness.country === selectedCountry) &&
         (!selectedTreatment || wellness.treatment === selectedTreatment)
     );
     setFilteredWellness(filtered);
     setCurrentPage(1); // Reset pagination on filter change
-  }, [selectedLocation, selectedTreatment]);
+  }, [selectedCountry, selectedTreatment]);
 
   // Paginate filtered results
   const paginatedData = filteredWellness.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <div className="px-6 md:px-10 lg:px-16 py-8">
+    <div className=" bg-[#f9fafe] px-6 md:px-10 lg:px-16 py-8">
       
       <ReusableHero heroImage={image02} className="h-[550px]">
          <div className="flex justify-center  text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
@@ -483,18 +483,18 @@ const WellnessPage = () => {
              <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
              <span> Hospitals</span>
            </div>
-           <h1 className=" px-8 leading-14 lg:text-5xl font-semibold text-xl font-figtree md:text-2xl">Find Your Hospitals
+           <h1 className=" w-200 px-8 leading-14 lg:text-5xl font-semibold text-xl font-figtree md:text-2xl">Transformative wellness tourism with treat global 
            </h1>
            <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">Easily locate the best hospitals near you with our smart search and recommendations.
            </p>
     
            <SearchBar
-               setSelectedLocation={setSelectedLocation}
+               setSelectedCountry={setSelectedCountry}
                setSelectedTreatment={setSelectedTreatment}
-               showCountry={false}
+               showCountry={true}
                showCity={false}
                showTreatment={true}
-               showLocation={true}
+               showLocation={false}
                showDepartment={false}
                showHospital={false}
                showDoctor={false}
@@ -507,7 +507,7 @@ const WellnessPage = () => {
       <div className="mt-8 flex flex-col md:flex-row gap-6">
 
         {/* Filters */}
-        <aside className="w-full md:w-1/3 lg:w-1/4 bg-white p-5 rounded-lg shadow">
+        <aside className=" sticky w-full md:w-1/3 lg:w-1/4 bg-white p-5 rounded-lg shadow">
 
           <div className="mapsContainer">
             <iframe
@@ -523,7 +523,7 @@ const WellnessPage = () => {
           </div>
 
           <h2 className="font-bold text-lg mb-4">Filters</h2>
-          <select onChange={(e) => setSelectedLocation(e.target.value)} className="w-full p-2 border rounded-md mb-3">
+          <select onChange={(e) => setSelectedCountry(e.target.value)} className="w-full p-2 border rounded-md mb-3">
             <option value="">All Locations</option>
             <option value="Bali">Bali</option>
             <option value="Thailand">Thailand</option>
@@ -540,33 +540,16 @@ const WellnessPage = () => {
 
         {/* Results Section */}
         <div className="w-full md:w-2/3 lg:w-3/4">
-          <div className="flex justify-between items-center mb-4">
-            <p className="text-gray-600 font-semibold">Found {filteredWellness.length} Results</p>
+          <div className="flex justify-between items-center -mt-10 mb-4">
+            <p className="text-gray-600 w-full text-right font-semibold">Found {filteredWellness.length} Results</p>
           </div>
 
           {/* Wellness Cards */}
           {paginatedData.length > 0 ? (
             paginatedData.map((wellness) => (
-
+              <div className="bg-white rounded-4xl p-">
               <WellnessCard key={wellness.id} {...wellness} />
-
-              // <div key={item.id} className="flex flex-col md:flex-row items-start bg-white shadow rounded-lg p-5 mb-4">
-              //   <div className="w-full md:w-1/3">
-              //     <img src="/assets/wellness-placeholder.jpg" alt={item.title} className="w-full h-40 object-cover rounded-lg" />
-              //   </div>
-              //   <div className="w-full md:w-2/3 pl-0 md:pl-4 mt-4 md:mt-0">
-              //     <h3 className="text-xl font-bold">{item.title}</h3>
-              //     <p className="text-gray-600">{item.location} • {item.treatment}</p>
-              //     <div className="flex items-center text-gray-500 mt-2">
-              //       <MdOutlineAccessTimeFilled className="text-blue-500 mr-2" />
-              //       <p>{item.duration}</p>
-              //       <BsPersonFill className="text-green-500 ml-4 mr-2" />
-              //       <p>{item.people}</p>
-              //     </div>
-              //     <p className="text-xl font-bold mt-3">{item.price}</p>
-              //     <p className="text-yellow-500 font-semibold">{item.rating} ⭐</p>
-              //   </div>
-              // </div>
+              </div>
             ))
           ) : (
             <p className="text-gray-500 text-center">No results found.</p>
@@ -583,7 +566,7 @@ const WellnessPage = () => {
         </div>
       </div>
 
-      {/* Map Section */}
+      {/* Map Section
       <div className="mt-8 bg-white p-6 shadow rounded-lg">
         <h2 className="text-lg font-bold mb-3">Map View</h2>
         <iframe
@@ -594,9 +577,9 @@ const WellnessPage = () => {
           referrerPolicy="no-referrer-when-downgrade"
           title="Wellness Tourism"
         />
-      </div>
+      </div> */}
       <BlogSection/>
-      <WellnessCard/>
+      {/* <WellnessCard/> */}
     </div>
   );
 };

@@ -1,5 +1,5 @@
-/* ------ Upper Section ------*/
-.container {
+/* ------ Upper Section ------ */
+/* .container {
     margin: 0;
 }
 .wellnessUpper {
@@ -15,7 +15,6 @@
 }
 
 .wellnessBg {
-    /* max-width: 1340px; */
     padding: 20px 0px 40px;
 }
 
@@ -60,11 +59,11 @@
 
 .wellnessTitle p {
     font-size: 18px;
-}
+} */
 
 /* ------ Lower Section ------ */
 
-.lowerSection {
+/* .lowerSection {
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -387,10 +386,10 @@
     background-color: var(--primary-color);
     border-radius: 50%;
     color: var(--white);
-}
+} */
 
 /* ------ Laptop View ------ */
-
+/* 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .wellness {
         padding: 0 30px;  
@@ -422,10 +421,10 @@
     .resultRightContent {
         position: unset;
     }
-}
+} */
 
 /* ------ Tab View ------ */
-
+/* 
 @media screen and (max-width: 1024px) {
     .wellness {
         padding: 10px 10px 0;
@@ -467,10 +466,10 @@
     .ant-collapse-ghost {
         padding: 20px;
     }
-}
+} */
 
 /* ------ Mobile View ------ */
-
+/* 
 @media screen and (max-width: 768px) {
     .wellnessUpper, .wellnessUpperContent {
         position: unset;
@@ -526,6 +525,6 @@
         padding: 18px 0;
     }
 } 
-
+ */
 
 

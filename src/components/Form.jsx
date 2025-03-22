@@ -3,7 +3,6 @@ import InputField from "./InputFields/Input";
 import FileInput from "./InputFields/FileInput";
 import TextArea from "./InputFields/TextArea";
 import { Button } from "./Button";
-import { heading, inputLabel } from "../assets/styles/Style";
 
 const Form = ({title,subTitle,data}) => {
   const [formData, setFormData] = useState({
@@ -63,7 +62,7 @@ const Form = ({title,subTitle,data}) => {
 
   return (
     <section id="formsection" className="py-10  my-10 bg-[#ECF2FF] mx-auto w-[1800px] rounded-4xl">
-      <div className=" mx-10 px-4 lg:px-10  flex flex-col items-center xl:flex-row gap-12">
+      <div className=" mx-10 px-4 lg:px-10  flex flex-col items-center xl:flex-row gap-30">
         <div className="flex-1">
           <form
             className="space-y-6 bg-white p-8 shadow-lg rounded-4xl"
@@ -115,9 +114,9 @@ const Form = ({title,subTitle,data}) => {
               placeholder="Describe the medical problem"
             />
 
-            <div id="formbox" className="flex items-center gap-2">
+            <div id="formbox" className="flex  -mx-20  w-140 items-center ">
               <input type="checkbox" id="terms" required />
-              <label className={inputLabel} htmlFor="terms">
+              <label className=" w-400 -mx-15 mt-2 md:text-md text-[#1E1E1E]" htmlFor="terms">
                 By submitting, I agree to the terms and conditions.
               </label>
             </div>
@@ -136,18 +135,18 @@ const Form = ({title,subTitle,data}) => {
 
         <div className="flex-1">
           <div>
-            <h1 className={heading}>
+            <h1 className="lg:text-6xl mb-20 font-semibold font-figtree text-3xl  text-[#29569c] ">
        {subTitle}
             </h1>
 
             {data.map((data, index) => (
-              <div key={index} className="flex gap-4 items-center mt-8 mb-6">
-                <div className="border-l-2   border-[#5057E5] h-20"></div>
+              <div key={index} className="flex gap-10 items-center mt-8 mb-6">
+                <div className="border-l-2   border-[#5057E5] h-25"></div>
                 <div>
-                  <h2 className="w-full font-figtree  md:text-2xl font-semibold text-[#2D3436]">
+                  <h2 className="w-full font-figtree mb-3 xl:text-3xl md:text-2xl font-medium text-[#2D3436]">
                     {data.title}
                   </h2>
-                  <p className="text-[#666666] w-90 text-sm md:text-base font-manrope">{data.des}</p>
+                  <p className="text-[#666666] w-150 xl:text-xl md:text-base font-manrope">{data.des}</p>
                 </div>
               </div>
             ))}

@@ -4,7 +4,7 @@ import hero from "../../assets/images/treatment.webp";
 import { heading } from "../../assets/styles/Style";
 import { Button } from "../../components/Button";
 import { Icon } from "@iconify/react";
-import { faqs, treatment } from "../../data/constants";
+import { treatment } from "../../data/constants";
 import SuccessStories from "../../components/SucessStories";
 import FAQ from "../../components/Faq";
 // import SingleTreatent from "./SingleTreatment";
@@ -89,7 +89,7 @@ const Treatment = () => {
 
      
       <SuccessStories />
-      <FAQ faqs={faqs} /> 
+      <FAQ category="treatment" /> 
     </>
   );
 };

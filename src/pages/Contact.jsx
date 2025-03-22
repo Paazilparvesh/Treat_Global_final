@@ -2,7 +2,6 @@ import React from "react";
 import Form from "../components/Form";
 import { contactUsData, faqs } from "../data/constants";
 import { heading } from "../assets/styles/Style";
-
 import { Icon } from "@iconify/react";
 import { ReusableHero } from "../components/ReusableHero";
 import hero from "../assets/images/contact.webp";
@@ -14,7 +13,7 @@ const Contact = () => {
     <>
       <ReusableHero heroImage={hero} className="h-[550px]">
         <div className="flex justify-center text-center mt-20 md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
-          <div className="mx-8 font-manrope text-sm  md:text-lg flex  items-center gap-4">
+          <div className="mx-8 font-manrope text-2xl md:text-[20px] flex items-center gap-4">
             Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
             <span> Contact Us</span>
           </div>

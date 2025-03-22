@@ -221,7 +221,9 @@ const hospitalData = [
         city: "Gurugram",
       },
 ];
-export     { hospitalData };
+export { hospitalData };
+
+
 
 export const navbar = [
     {name: 'Medical Opinion', path: `${routesPath.MEDICAL_OPINION}`},
@@ -233,12 +235,16 @@ export const navbar = [
     {name: 'Blogs', path: `${routesPath.blog}`},
 ];
 
+
+
 export const lang = [
     { value: "EN", label: "English" },
     { value: "FR", label: "Français" },
     { value: "ES", label: "Español" },
     { value: "DE", label: "Deutsch" },
 ];
+
+
 
 export const footerContents = {
   logo: 'images/treatGlobalLogo.png', // Replace with your logo path
@@ -533,254 +539,254 @@ export const contactUsData = [
 ]
 export const medicalsData = [
   {
-    title:'Treatment Selection and document upload ',
-    des:'User fills the form with their medical documents requesting a second opinion'
+    title:'Assessment:',
+    des:'Begin with a personalized health assessment evaluation to identify specific needs and goals.'
   },
   {
-    title:'Make Payment ',
-    des:'Complete your request by making the payment '
+    title:'Planning:',
+    des:'Develop tailored strategies, including diet, exercise and fitness, stress management, and preventive care strategies.'
   },
   {
-    title:'Document Assessment & Expert Review',
-    des:'Our expert doctors will receive & evaluate your request '
+    title:'Implementation:',
+    des:'Engage in structured programs, therapies, or activities designed to enhance overall well-being.'
   },
   {
-    title:'Mail delivery of the report',
-    des:'User will receive the comprehensive report along with treatment suggestion '
+    title:'Monitoring & Support:',
+    des:'Regular check-ins and professional guidance ensure sustainable progress and long-term benefits.'
   },
 
 ]
 
 
-// export const faqs = {
-//   medicalOpinion: [
-//     {
-//       question: "What is the focus of health and wellness programs?",
-//       answer: "They aim to improve physical, mental, and emotional well-being through preventive care, lifestyle changes, and personalized treatments.",
-//     },
-//     {
-//       question: "Are these programs customized?",
-//       answer: "Yes, most programs are tailored to individual health needs, goals, and lifestyles for maximum effectiveness.",
-//     },
-//     {
-//       question: "How do I manage stress effectively?",
-//       answer: "Stress can be managed through mindfulness, deep breathing exercises, physical activity, and prioritizing self-care.",
-//     },
-//     {
-//       question: "Is professional guidance available?",
-//       answer: "Yes, certified professionals like doctors, nutritionists, and wellness coaches provide expert guidance.",
-//     },
-//     {
-//       question: "What is a health and wellness program?",
-//       answer: "A structured plan designed to improve physical, mental, and emotional well-being through lifestyle changes and preventive care.",
-//     },
-//     {
-//       question: "Who can benefit from a wellness program?",
-//       answer: "Anyone looking to enhance their overall health, manage stress, improve fitness, or adopt healthier habits.",
-//     },
-//     {
-//       question: "Are wellness programs personalized?",
-//       answer: "Yes, they are customized based on individual health needs, goals, and lifestyle preferences.",
-//     },
-//     {
-//       question: "How do I get started with a wellness program?",
-//       answer: "Begin with a health assessment to determine your specific needs, followed by a tailored plan from professionals.",
-//     },
-//     {
-//       question: "What aspects of health do wellness programs focus on?",
-//       answer: "They cover nutrition, physical activity, mental well-being, stress management, and preventive healthcare.",
-//     },
-//     {
-//       question: "Can a wellness program help with weight management?",
-//       answer: "Yes, personalized diet and fitness plans can support healthy weight loss and maintenance.",
-//     },
-//     {
-//       question: "How does stress management fit into wellness programs?",
-//       answer: "Techniques like mindfulness, meditation, breathing exercises, and physical activity help reduce stress levels.",
-//     },
-//     {
-//       question: "Is professional guidance available in these programs?",
-//       answer: "Yes, certified doctors, nutritionists, fitness trainers, and wellness coaches provide expert support.",
-//     },
-//     {
-//       question: "Are wellness programs suitable for all age groups?",
-//       answer: "Absolutely! Programs can be tailored for children, adults, and seniors based on their unique needs.",
-//     },
-//     {
-//       question: "Can I join a wellness program if I have a medical condition?",
-//       answer: "Yes, professionals design safe and effective programs considering your medical history and requirements.",
-//     },
-//     {
-//       question: "What role does nutrition play in wellness programs?",
-//       answer: "A balanced diet is essential for optimal health, supporting energy levels, immunity, and disease prevention.",
-//     },
-//     {
-//       question: "How can a wellness program improve mental health?",
-//       answer: "It incorporates activities like therapy, mindfulness, and relaxation techniques to support emotional well-being.",
-//     },
-//     {
-//       question: "Are these programs available online?",
-//       answer: "Yes, many wellness programs offer virtual consultations, online coaching, and digital resources.",
-//     },
-//     {
-//       question: "Is follow-up support provided in wellness programs?",
-//       answer: "Yes, regular check-ins and progress tracking ensure long-term success and sustained well-being.",
-//     },
-//   ],
-//   treatment: [
-//     {
-//       question: "What is root canal treatment?",
-//       answer: "It’s a procedure to save an infected or damaged tooth by removing the pulp, cleaning the root canals, and sealing them. It relieves pain and preserves your natural teeth.",
-//     },
-//     {
-//       question: "How long do dental implants last?",
-//       answer: "With proper care, dental implants can last a lifetime. They are a permanent solution for missing teeth, offering stability and natural-looking results.",
-//     },
-//     {
-//       question: "Is root canal treatment painful?",
-//       answer: "No, it’s performed under local anesthesia, making it a pain-free experience. Post-procedure discomfort is minimal and manageable.",
-//     },
-//     {
-//       question: "What is a mommy makeover?",
-//       answer: "It’s a combination of procedures like liposuction, tummy tuck, and breast lift to restore a woman’s pre-pregnancy body, enhancing confidence and appearance.",
-//     },
-//     {
-//       question: "How long does a facelift last?",
-//       answer: "A facelift can provide results for 10-15 years, depending on aging, lifestyle, and skincare. It tightens sagging skin and reduces wrinkles.",
-//     },
-//     {
-//       question: "What is a Brazilian Butt Lift (BBL)?",
-//       answer: "It’s a procedure that transfers fat from areas like the abdomen to the buttocks for a curvier, more lifted appearance without implants.",
-//     },
-//     {
-//       question: "What is laser treatment for acne scars?",
-//       answer: "It’s a non-invasive procedure that uses laser technology to reduce scar visibility, improve skin texture, and promote collagen production.",
-//     },
-//     {
-//       question: "How does fat injection for facial rejuvenation work?",
-//       answer: "Fat is harvested from your body, purified, and injected into the face to restore volume, reduce wrinkles, and enhance facial contours naturally.",
-//     },
-//     {
-//       question: "What is a French thread lift?",
-//       answer: "It’s a non-surgical procedure using dissolvable threads to lift and tighten sagging skin on the face and neck, providing a youthful appearance.",
-//     },
-//     {
-//       question: "What is a tummy tuck?",
-//       answer: "It’s a surgical procedure to remove excess skin and fat from the abdomen while tightening muscles for a flatter, firmer stomach.",
-//     },
-//     {
-//       question: "How long is recovery after liposuction?",
-//       answer: "Recovery typically takes 1-2 weeks, with full results visible after a few months. Compression garments are worn to aid healing.",
-//     },
-//     {
-//       question: "What is a thigh lift?",
-//       answer: "It’s a procedure to remove excess skin and fat from the thighs, creating a smoother, more toned appearance, ideal after weight loss.",
-//     },
-//     {
-//       question: "What is mastopexy?",
-//       answer: "Mastopexy, or breast lift, raises and reshapes sagging breasts by removing excess skin and tightening tissue for a youthful contour.",
-//     },
-//     {
-//       question: "Can breast implants be removed or replaced?",
-//       answer: "Yes, implants can be removed or replaced due to personal preference, medical reasons, or complications like rupture or capsular contracture.",
-//     },
-//     {
-//       question: "What is inverted nipple surgery?",
-//       answer: "It’s a procedure to correct nipples that retract inward, improving appearance and comfort, often performed under local anesthesia.",
-//     },
-//     {
-//       question: "What is rhinoplasty?",
-//       answer: "Rhinoplasty, or nose job, reshapes the nose to improve facial harmony, correct structural issues, or enhance breathing.",
-//     },
-//     {
-//       question: "What is blepharoplasty?",
-//       answer: "It’s eyelid surgery to remove excess skin, fat, and muscle from the eyelids, reducing puffiness and creating a more alert appearance.",
-//     },
-//     {
-//       question: "What is a brow lift?",
-//       answer: "It’s a procedure to lift sagging brows, smooth forehead wrinkles, and create a more youthful, refreshed facial expression.",
-//     },
-//     {
-//       question: "What is otoplasty?",
-//       answer: "Otoplasty, or ear surgery, corrects protruding or misshapen ears by reshaping cartilage and repositioning them closer to the head.",
-//     },
-//     {
-//       question: "What is a penile implant?",
-//       answer: "It’s a surgical solution for severe erectile dysfunction, involving a 3-piece device that allows for natural-looking, on-demand erections.",
-//     },
-//   ],
-//   doctors: [
-//     {
-//       question: "Can I select the specialist for my case?",
-//       answer: "Yes, you can choose from a list of available specialists.",
-//     },
-//     {
-//       question: "Are the doctors providing opinions board-certified?",
-//       answer: "Yes, all doctors are board-certified.",
-//     },
-//   ],
-// };
+export const faqs = {
+  medicalOpinion: [
+    {
+      question: "What is the focus of health and wellness programs?",
+      answer: "They aim to improve physical, mental, and emotional well-being through preventive care, lifestyle changes, and personalized treatments.",
+    },
+    {
+      question: "Are these programs customized?",
+      answer: "Yes, most programs are tailored to individual health needs, goals, and lifestyles for maximum effectiveness.",
+    },
+    {
+      question: "How do I manage stress effectively?",
+      answer: "Stress can be managed through mindfulness, deep breathing exercises, physical activity, and prioritizing self-care.",
+    },
+    {
+      question: "Is professional guidance available?",
+      answer: "Yes, certified professionals like doctors, nutritionists, and wellness coaches provide expert guidance.",
+    },
+    {
+      question: "What is a health and wellness program?",
+      answer: "A structured plan designed to improve physical, mental, and emotional well-being through lifestyle changes and preventive care.",
+    },
+    {
+      question: "Who can benefit from a wellness program?",
+      answer: "Anyone looking to enhance their overall health, manage stress, improve fitness, or adopt healthier habits.",
+    },
+    {
+      question: "Are wellness programs personalized?",
+      answer: "Yes, they are customized based on individual health needs, goals, and lifestyle preferences.",
+    },
+    {
+      question: "How do I get started with a wellness program?",
+      answer: "Begin with a health assessment to determine your specific needs, followed by a tailored plan from professionals.",
+    },
+    {
+      question: "What aspects of health do wellness programs focus on?",
+      answer: "They cover nutrition, physical activity, mental well-being, stress management, and preventive healthcare.",
+    },
+    {
+      question: "Can a wellness program help with weight management?",
+      answer: "Yes, personalized diet and fitness plans can support healthy weight loss and maintenance.",
+    },
+    {
+      question: "How does stress management fit into wellness programs?",
+      answer: "Techniques like mindfulness, meditation, breathing exercises, and physical activity help reduce stress levels.",
+    },
+    {
+      question: "Is professional guidance available in these programs?",
+      answer: "Yes, certified doctors, nutritionists, fitness trainers, and wellness coaches provide expert support.",
+    },
+    {
+      question: "Are wellness programs suitable for all age groups?",
+      answer: "Absolutely! Programs can be tailored for children, adults, and seniors based on their unique needs.",
+    },
+    {
+      question: "Can I join a wellness program if I have a medical condition?",
+      answer: "Yes, professionals design safe and effective programs considering your medical history and requirements.",
+    },
+    {
+      question: "What role does nutrition play in wellness programs?",
+      answer: "A balanced diet is essential for optimal health, supporting energy levels, immunity, and disease prevention.",
+    },
+    {
+      question: "How can a wellness program improve mental health?",
+      answer: "It incorporates activities like therapy, mindfulness, and relaxation techniques to support emotional well-being.",
+    },
+    {
+      question: "Are these programs available online?",
+      answer: "Yes, many wellness programs offer virtual consultations, online coaching, and digital resources.",
+    },
+    {
+      question: "Is follow-up support provided in wellness programs?",
+      answer: "Yes, regular check-ins and progress tracking ensure long-term success and sustained well-being.",
+    },
+  ],
+  treatment: [
+    {
+      question: "What is root canal treatment?",
+      answer: "It’s a procedure to save an infected or damaged tooth by removing the pulp, cleaning the root canals, and sealing them. It relieves pain and preserves your natural teeth.",
+    },
+    {
+      question: "How long do dental implants last?",
+      answer: "With proper care, dental implants can last a lifetime. They are a permanent solution for missing teeth, offering stability and natural-looking results.",
+    },
+    {
+      question: "Is root canal treatment painful?",
+      answer: "No, it’s performed under local anesthesia, making it a pain-free experience. Post-procedure discomfort is minimal and manageable.",
+    },
+    {
+      question: "What is a mommy makeover?",
+      answer: "It’s a combination of procedures like liposuction, tummy tuck, and breast lift to restore a woman’s pre-pregnancy body, enhancing confidence and appearance.",
+    },
+    {
+      question: "How long does a facelift last?",
+      answer: "A facelift can provide results for 10-15 years, depending on aging, lifestyle, and skincare. It tightens sagging skin and reduces wrinkles.",
+    },
+    {
+      question: "What is a Brazilian Butt Lift (BBL)?",
+      answer: "It’s a procedure that transfers fat from areas like the abdomen to the buttocks for a curvier, more lifted appearance without implants.",
+    },
+    {
+      question: "What is laser treatment for acne scars?",
+      answer: "It’s a non-invasive procedure that uses laser technology to reduce scar visibility, improve skin texture, and promote collagen production.",
+    },
+    {
+      question: "How does fat injection for facial rejuvenation work?",
+      answer: "Fat is harvested from your body, purified, and injected into the face to restore volume, reduce wrinkles, and enhance facial contours naturally.",
+    },
+    {
+      question: "What is a French thread lift?",
+      answer: "It’s a non-surgical procedure using dissolvable threads to lift and tighten sagging skin on the face and neck, providing a youthful appearance.",
+    },
+    {
+      question: "What is a tummy tuck?",
+      answer: "It’s a surgical procedure to remove excess skin and fat from the abdomen while tightening muscles for a flatter, firmer stomach.",
+    },
+    {
+      question: "How long is recovery after liposuction?",
+      answer: "Recovery typically takes 1-2 weeks, with full results visible after a few months. Compression garments are worn to aid healing.",
+    },
+    {
+      question: "What is a thigh lift?",
+      answer: "It’s a procedure to remove excess skin and fat from the thighs, creating a smoother, more toned appearance, ideal after weight loss.",
+    },
+    {
+      question: "What is mastopexy?",
+      answer: "Mastopexy, or breast lift, raises and reshapes sagging breasts by removing excess skin and tightening tissue for a youthful contour.",
+    },
+    {
+      question: "Can breast implants be removed or replaced?",
+      answer: "Yes, implants can be removed or replaced due to personal preference, medical reasons, or complications like rupture or capsular contracture.",
+    },
+    {
+      question: "What is inverted nipple surgery?",
+      answer: "It’s a procedure to correct nipples that retract inward, improving appearance and comfort, often performed under local anesthesia.",
+    },
+    {
+      question: "What is rhinoplasty?",
+      answer: "Rhinoplasty, or nose job, reshapes the nose to improve facial harmony, correct structural issues, or enhance breathing.",
+    },
+    {
+      question: "What is blepharoplasty?",
+      answer: "It’s eyelid surgery to remove excess skin, fat, and muscle from the eyelids, reducing puffiness and creating a more alert appearance.",
+    },
+    {
+      question: "What is a brow lift?",
+      answer: "It’s a procedure to lift sagging brows, smooth forehead wrinkles, and create a more youthful, refreshed facial expression.",
+    },
+    {
+      question: "What is otoplasty?",
+      answer: "Otoplasty, or ear surgery, corrects protruding or misshapen ears by reshaping cartilage and repositioning them closer to the head.",
+    },
+    {
+      question: "What is a penile implant?",
+      answer: "It’s a surgical solution for severe erectile dysfunction, involving a 3-piece device that allows for natural-looking, on-demand erections.",
+    },
+  ],
+  doctors: [
+    {
+      question: "Can I select the specialist for my case?",
+      answer: "Yes, you can choose from a list of available specialists.",
+    },
+    {
+      question: "Are the doctors providing opinions board-certified?",
+      answer: "Yes, all doctors are board-certified.",
+    },
+  ],
+};
 
 
-export const  faqs = [
-  {
-    question: "Are medical opinions available 24/7?",
-    answer:
-      "A second opinion provides clarity, confirms a diagnosis, and helps you make informed decisions about your treatment plan. It can also offer alternative approaches to care for or validate your current course of action.",
-  },
-  {
-    question: "What is the expected response time for opinions?",
-    answer: "The expected response time is within 24 hours.",
-  },
-  {
-    question: "What kind of cases are eligible for medical opinions?",
-    answer: "Most medical cases are eligible for opinions.",
-  },
-  {
-    question: "Is there a fee for medical opinions?",
-    answer: "Fees may vary based on the complexity of the case.",
-  },
-  {
-    question: "Can I select the specialist for my case?",
-    answer: "Yes, you can select from a list of available specialists.",
-  },
-  {
-    question: "How accurate are the provided medical opinions?",
-    answer: "Our experts provide highly accurate opinions.",
-  },
-  {
-    question: "Is there a follow-up option after receiving the opinion?",
-    answer: "Yes, follow-ups are available.",
-  },
-  {
-    question: "How are opinions delivered (email, portal, etc.)?",
-    answer: "Opinions are delivered via email and portal.",
-  },
-  {
-    question: "Can I cancel a medical opinion request?",
-    answer: "Yes, you can cancel before the opinion is processed.",
-  },
-  {
-    question: "Are the doctors providing opinions board-certified?",
-    answer: "Yes, all doctors are board-certified.",
-  },
-  {
-    question: "Do I need to provide a medical history?",
-    answer: "Yes, providing medical history helps improve accuracy.",
-  },
-  {
-    question: "Is there a translation option for reports?",
-    answer: "Yes, translation is available upon request.",
-  },
-  {
-    question: "Can opinions help me decide on surgery?",
-    answer: "Yes, opinions can provide valuable insights for surgery.",
-  },
-  {
-    question: "Is telemedicine available for consultation?",
-    answer: "Yes, telemedicine is available for consultation.",
-  },
-];
+// export const  faqs = [
+//   {
+//     question: "Are medical opinions available 24/7?",
+//     answer:
+//       "A second opinion provides clarity, confirms a diagnosis, and helps you make informed decisions about your treatment plan. It can also offer alternative approaches to care for or validate your current course of action.",
+//   },
+//   {
+//     question: "What is the expected response time for opinions?",
+//     answer: "The expected response time is within 24 hours.",
+//   },
+//   {
+//     question: "What kind of cases are eligible for medical opinions?",
+//     answer: "Most medical cases are eligible for opinions.",
+//   },
+//   {
+//     question: "Is there a fee for medical opinions?",
+//     answer: "Fees may vary based on the complexity of the case.",
+//   },
+//   {
+//     question: "Can I select the specialist for my case?",
+//     answer: "Yes, you can select from a list of available specialists.",
+//   },
+//   {
+//     question: "How accurate are the provided medical opinions?",
+//     answer: "Our experts provide highly accurate opinions.",
+//   },
+//   {
+//     question: "Is there a follow-up option after receiving the opinion?",
+//     answer: "Yes, follow-ups are available.",
+//   },
+//   {
+//     question: "How are opinions delivered (email, portal, etc.)?",
+//     answer: "Opinions are delivered via email and portal.",
+//   },
+//   {
+//     question: "Can I cancel a medical opinion request?",
+//     answer: "Yes, you can cancel before the opinion is processed.",
+//   },
+//   {
+//     question: "Are the doctors providing opinions board-certified?",
+//     answer: "Yes, all doctors are board-certified.",
+//   },
+//   {
+//     question: "Do I need to provide a medical history?",
+//     answer: "Yes, providing medical history helps improve accuracy.",
+//   },
+//   {
+//     question: "Is there a translation option for reports?",
+//     answer: "Yes, translation is available upon request.",
+//   },
+//   {
+//     question: "Can opinions help me decide on surgery?",
+//     answer: "Yes, opinions can provide valuable insights for surgery.",
+//   },
+//   {
+//     question: "Is telemedicine available for consultation?",
+//     answer: "Yes, telemedicine is available for consultation.",
+//   },
+// ];
 
 
 export const singleTreatment = {
@@ -1009,7 +1015,7 @@ const doctorsData = [
 export { doctorsData }
 
 
-export const doctorInnerData = [
+const doctorInnerData = [
   {
     name: "Dr. Hitesh Garg",
     imageUrl:dr,
@@ -1037,6 +1043,7 @@ export const doctorInnerData = [
     ]
   }
 ];
+export { doctorInnerData }
 
 
 const blogInnerData = {

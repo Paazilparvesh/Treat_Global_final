@@ -30,7 +30,7 @@ return (
         </p>
 
         {/* Rating */}
-        <p className=" absolute -top-6 right-10 bg-white rounded-4xl p-2 shadow-lg text-gray-600 text-sm mt-1">⭐ {rating} ({reviews} reviews)</p>
+        <p className=" absolute -top-6 right-10 bg-white rounded-4xl p-2 shadow-lg text-gray-500 text-sm mt-1">⭐ <span className="text-gray-950"> {rating} </span> ({reviews} reviews)</p>
 
         {/* Explore More Button */}
         <Link to={`/hospital/${id}`}>

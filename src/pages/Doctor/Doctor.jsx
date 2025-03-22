@@ -28,7 +28,7 @@ const Doctor = () => {
   return (
     <>
       <ReusableHero heroImage={hero} className="h-[550px]">
-        <div className="flex justify-center text-center mt-20 md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
+        <div className="flex justify-center text-center mt-0 md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
           <div className="mx-8 font-manrope text-sm md:text-lg flex items-center gap-4">
             Home <div className="size-1 md:size-2 bg-white rounded-full"></div>
             <span> Doctors</span>
@@ -40,8 +40,7 @@ const Doctor = () => {
             Find the best Doctors near you with ease. Get quick access to
             trusted healthcare facilities.
           </p>
-
-          {/* Search Bar with all filters */}
+          <div className=" -ml-6">
           <SearchBar
             setSelectedTreatment={setSelectedTreatment}
             setSelectedCountry={setSelectedCountry}
@@ -53,20 +52,22 @@ const Doctor = () => {
             showHospital={true}
             showDepartment={false}
             showDoctor={false}
+            showLocation={false}
           />
+          </div>
         </div>
       </ReusableHero>
 
       <div className="p-6 text-center">
-        <h1 className="text-4xl font-bold text-left text-blue-800 mb-2 ml-12">
+        <h1 className="text-5xl font-bold text-left text-blue-800 ml-8">
           Related <span className="text-secondary">Doctors</span>
         </h1>
-        <p className="text-right text-gray-500 text-lg -mt-6 mr-12">
+        <p className="text-right text-gray-500 text-lg mb-10 -mt-6 mr-12">
           Found {filteredDoctors.length} Results
         </p>
 
         {/* Doctors Grid */}
-        <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+        <div className="mx-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
           {filteredDoctors.length > 0 ? (
             filteredDoctors.map((doctor) => (
               <DoctorCard key={doctor.id} {...doctor} />

@@ -21,6 +21,16 @@ const Home = () => {
     console.log("Searching for:", query);
   };
 
+  // useEffect(() => {
+  //   const filtered = blogData.filter(
+  //     (blog) =>
+  //       (!selectedDepartment || blog.department === selectedDepartment) &&
+  //       (!selectedHospital || blog.hospital === selectedHospital) &&
+  //       (!selectedDoctor || blog.doctor === selectedDoctor)
+  //   );
+  //   setFilteredBlog(filtered);
+  // }, [selectedDepartment, selectedHospital, selectedDoctor]); // Runs when rs change
+
   return (
     <>
       <ReusableHero insert heroVideo={video01} className="h-[700px] ">
@@ -44,8 +54,19 @@ const Home = () => {
            <Button onClick={handleSearch} name="Search" startIcon={ <Icon icon="mdi:magnify" className="text-xl" />}/>
            
           </div>
-          <div className=" w-[1500px]">
-          <SearchBar />
+          <div className=" -my-5">
+          <SearchBar 
+            // setSelectedCountry={setSelectedCountry}
+            // setSelectedTreatment={setSelectedTreatment}
+            // setSelectedNumber={setSelectedNumber}
+            showCountry={true}
+            showCity={false}
+            showTreatment={true}
+            showLocation={false}
+            showDepartment={false}
+            showHospital={false}
+            showDoctor={false}
+          />
           </div>
         </div>
       </ReusableHero>

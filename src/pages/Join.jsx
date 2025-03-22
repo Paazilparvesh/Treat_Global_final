@@ -10,9 +10,9 @@ import FAQ from "../components/Faq";
 const Join = () => {
   return (
     <>
-      <ReusableHero heroImage={hero} className="h-[550px]">
+      <ReusableHero heroImage={hero} className="h-[550px]  " >
         <div className="flex justify-center text-center mt-20 md:text-start px-4 md:ps-10 py-20 lg: min-h-[450px] flex-col gap-4 text-white">
-          <div className=" mx-8 font-manrope text-sm  md:text-lg flex  items-center gap-4">
+          <div className=" mx-8 font-manrope text-2xl md:text-[20px] flex items-center gap-4">
             Home <div className="size-1 md:size-2 bg-white  rounded-full"></div>{" "}
             <span> Join As A Partner</span>
           </div>
@@ -21,7 +21,7 @@ const Join = () => {
             <br className="hidden lg:block" />
             Opportunities!
           </h1>
-          <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">
+          <p className="max-w-[1150px] px-8 text-[22px] font-manrope font-light">
             Partners refer users to our medical team for treatment approval and
             receive real-time updates. They earn incentives based on successful
             referrals, treatment completions, and patient outcomes

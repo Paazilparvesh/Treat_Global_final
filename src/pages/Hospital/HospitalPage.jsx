@@ -102,7 +102,7 @@ const HospitalList = () => {
       {/* Hero Section */}
       <ReusableHero heroImage={hero_image} className="h-[550px]">
         <div className="flex justify-center text-center md:text-start px-4 md:ps-10 py-20 lg:min-h-[450px] flex-col gap-4 text-white">
-          <div className="mx-8 font-manrope text-sm md:text-lg flex items-center gap-4">
+          <div className="mx-9 font-manrope text-sm md:text-lg flex items-center gap-4">
             Home
             <div className="size-1 md:size-2 bg-white rounded-full"></div> 
             <span>Hospitals</span>
@@ -111,7 +111,7 @@ const HospitalList = () => {
             Find Your Hospitals
           </h1>
           <p className="max-w-[950px] px-8 text-[22px] font-manrope font-light">
-            Easily locate the best hospitals near you with our smart search and recommendations.
+          Treat Global offers world-class medical treatments and personalized care to patients worldwide. 
           </p>
           <SearchBar 
             setSelectedTreatment={setSelectedTreatment}
@@ -123,6 +123,7 @@ const HospitalList = () => {
             showDepartment={false}
             showHospital={false}
             showDoctor={false}
+            showLocation={false}
           />
         </div>
       </ReusableHero>
